@@ -1,0 +1,275 @@
+url: https://cwru-sdle.github.io/manureshed/
+
+template:
+  bootstrap: 5
+  bootswatch: flatly
+  bslib:
+    primary: "#2c3e50"
+    bg: "#ffffff"
+    fg: "#2c3e50"
+
+home:
+  title: "manureshed: Spatiotemporal Nutrient Balance Analysis"
+  description: >
+    Analyze agricultural nutrient balances across multiple spatial scales with
+    integration of wastewater treatment plant nutrient loads.
+
+navbar:
+  structure:
+    left: [intro, reference, articles, tutorials, news]
+    right: [search, github]
+  components:
+    home:
+      icon: fas fa-home fa-lg
+      href: index.html
+      aria-label: "Home"
+    reference:
+      text: Reference
+      href: reference/index.html
+    articles:
+      text: Articles
+      menu:
+      - text: Getting Started
+        href: articles/getting-started.html
+      - text: -------
+      - text: Scenario Comparison
+        href: articles/scenario-comparison.html
+      - text: -------
+      - text: Advanced Features
+        href: articles/advanced-features.html
+      - text: -------
+      - text: Custom Efficiency Analysis
+        href: articles/custom-efficiency-analyis.html
+      - text: -------
+      - text: Interactive Dashboard
+        href: articles/dashboard-guide.html
+      - text: -------
+      - text: Visualization Guide
+        href: articles/visualization-guide.html
+      - text: -------
+      - text: Custom Data Integration
+        href: articles/data-integration.html
+      - text: -------
+      - text: Custom Efficiency Analysis
+        href: articles/custom-efficiency-analyis.html
+    news:
+      text: Changelog
+      href: news/index.html
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/cwru-sdle/manureshed
+      aria-label: "GitHub repository"
+
+reference:
+  - title: "Core Analysis Functions"
+    desc: "Main workflow functions for nutrient balance analysis"
+    contents:
+      - run_builtin_analysis
+      - quick_analysis
+      - batch_analysis_years
+      - batch_analysis_enhanced
+      - batch_analysis_parallel
+      - benchmark_analysis
+
+  - title: "Scenario Comparison"
+    desc: "Compare multiple analysis scenarios"
+    contents:
+      - compare_scenarios
+      - compare_analyses
+      - extract_scenario_metrics
+
+  - title: "Interactive Dashboard"
+    desc: "Launch interactive Shiny interface"
+    contents:
+      - launch_dashboard
+
+  - title: "State-Level Analysis"
+    desc: "Analyze specific states or regions"
+    contents:
+      - run_state_analysis
+      - quick_state_analysis
+      - get_state_fips
+      - filter_by_state
+
+  - title: "Data Loading Functions"
+    desc: "Load and prepare data for analysis"
+    contents:
+      - load_builtin_nugis
+      - load_builtin_wwtp
+      - load_builtin_boundaries
+      - load_user_wwtp
+      - load_texas_huc8_data
+      - load_texas_huc8_boundaries
+      - check_builtin_data
+      - download_all_data
+      - download_osf_data
+      - clear_data_cache
+      - list_available_years
+
+  - title: "WWTP Data Functions"
+    desc: "Process wastewater treatment plant data"
+    contents:
+      - wwtp_clean_data
+      - wwtp_filter_positive_loads
+      - wwtp_classify_sources
+      - wwtp_aggregate_by_boundaries
+      - wwtp_to_spatial
+      - wwtp_process_complete
+      - map_wwtp_columns
+
+  - title: "Agricultural Classification"
+    desc: "Agricultural nutrient balance calculations and classification"
+    contents:
+      - agri_process_nugis
+      - agri_classify_nitrogen
+      - agri_classify_phosphorus
+      - agri_classify_complete
+      - agri_classify_nitrogen_custom
+      - agri_classify_phosphorus_custom
+      - agri_classify_complete_custom
+
+  - title: "Integration Functions"
+    desc: "Combine agricultural and WWTP data"
+    contents:
+      - integrate_wwtp_agricultural
+      - integrate_complete
+      - add_texas_huc8
+
+  - title: "Visualization Functions"
+    desc: "Create maps and plots"
+    contents:
+      - map_agricultural_classification
+      - map_wwtp_points
+      - map_wwtp_influence
+      - create_network_plot
+      - plot_before_after_comparison
+      - plot_impact_ratios
+      - plot_absolute_changes
+      - create_classification_trend_plot
+      - create_stacked_area_plot
+      - create_yoy_change_plot
+      - create_year_comparison_plots
+
+  - title: "Spatial Analysis"
+    desc: "Spatial operations and transition analysis"
+    contents:
+      - add_centroid_coordinates
+      - calculate_transition_probabilities
+      - save_transition_matrix
+      - get_state_boundaries
+
+  - title: "File I/O Functions"
+    desc: "Save and export analysis results"
+    contents:
+      - save_spatial_data
+      - save_centroid_data
+      - save_plot
+      - save_analysis_summary
+      - export_for_gis
+      - export_for_policy
+      - export_for_publication
+
+  - title: "Reporting Functions"
+    desc: "Generate analysis reports"
+    contents:
+      - create_analysis_report
+      - create_batch_summary_report
+      - create_classification_summary
+      - create_comparison_summary
+      - create_comprehensive_comparisons
+      - generate_report_content
+      - summarize_results
+
+  - title: "Comparison and Plotting"
+    desc: "Additional comparison tools"
+    contents:
+      - create_comparison_plots
+      - extract_trend_data
+
+  - title: "Utility Functions"
+    desc: "Helper functions and data validation"
+    contents:
+      - quick_check
+      - health_check
+      - test_osf_connection
+      - citation_info
+      - get_nutrient_colors
+      - get_cropland_threshold
+      - calculate_cropland_threshold
+      - format_huc8
+      - clean_text
+      - clean_category_names
+      - validate_columns
+      - convert_load_units
+
+  - title: "Constants and Data"
+    desc: "Package constants and reference data"
+    contents:
+      - MANURESHED_CRS
+      - KG_TO_TONS
+      - LBS_TO_KG
+      - LBS_TO_TONS
+      - P2O5_TO_P
+      - CONUS_STATES
+      - data_sources
+
+  - title: "Package Information"
+    desc: "Package metadata and help"
+    contents:
+      - manureshed
+
+articles:
+  - title: "Getting Started"
+    navbar: ~
+    contents:
+      - getting-started
+
+  - title: "Analysis Workflows"
+    desc: "Different types of analysis workflows"
+    contents:
+      - scenario-comparison
+      - advanced-features
+      - custom-efficiency-analyis
+
+  - title: "Tools & Visualization"
+    desc: "Interactive tools and visualization guides"
+    contents:
+      - dashboard-guide
+      - visualization-guide
+
+  - title: "Data Integration"
+    desc: "Working with custom data"
+    contents:
+      - data-integration
+
+news:
+  releases:
+    - text: "Version 0.1.1"
+      href: news/index.html#manureshed-0-1-1
+    - text: "Version 0.1.0"
+      href: news/index.html#manureshed-0-1-0
+
+footer:
+  structure:
+    left: developed_by
+    right: built_with
+  components:
+    developed_by: |
+      Developed by [Olatunde D. Akanbi](https://orcid.org/0000-0001-7719-2619) et al.
+      at Case Western Reserve University
+    built_with: |
+      Built with [pkgdown](https://pkgdown.r-lib.org/) and
+      [R](https://www.r-project.org/)
+
+development:
+  mode: auto
+  version_label: default
+  version_tooltip: "Version"
+
+authors:
+  Olatunde D. Akanbi:
+    href: https://orcid.org/0000-0001-7719-2619
+  Erika I. Barcelos:
+    href: https://orcid.org/0000-0002-9273-8488
+  Roger H. French:
+    href: https://orcid.org/0000-0002-6162-0532
