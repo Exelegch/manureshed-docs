@@ -5,10 +5,10 @@
 ### New Features
 
 - Added
-  [`compare_scenarios()`](https://cwru-sdle.github.io/manureshed/reference/compare_scenarios.md)
+  [`compare_scenarios()`](https://exelegch.github.io/manureshed-docs/reference/compare_scenarios.md)
   for side-by-side scenario comparison
 - Added
-  [`launch_dashboard()`](https://cwru-sdle.github.io/manureshed/reference/launch_dashboard.md)
+  [`launch_dashboard()`](https://exelegch.github.io/manureshed-docs/reference/launch_dashboard.md)
   for interactive Shiny interface
 - Dashboard requires optional packages: shiny, shinydashboard, leaflet,
   plotly, DT

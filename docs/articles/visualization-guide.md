@@ -55,7 +55,7 @@ The `manureshed` package creates several types of visualizations:
 ## Quick Maps with quick_analysis()
 
 The easiest way to get maps is with
-[`quick_analysis()`](https://cwru-sdle.github.io/manureshed/reference/quick_analysis.md):
+[`quick_analysis()`](https://exelegch.github.io/manureshed-docs/reference/quick_analysis.md):
 
 ``` r
 # This creates all maps automatically

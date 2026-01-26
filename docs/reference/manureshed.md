@@ -14,128 +14,128 @@ package size while maintaining full functionality.
 
 ### Data Loading and Management:
 
-- [`load_builtin_nugis`](https://cwru-sdle.github.io/manureshed/reference/load_builtin_nugis.md):
+- [`load_builtin_nugis`](https://exelegch.github.io/manureshed-docs/reference/load_builtin_nugis.md):
   Load NuGIS data from OSF
 
-- [`load_builtin_boundaries`](https://cwru-sdle.github.io/manureshed/reference/load_builtin_boundaries.md):
+- [`load_builtin_boundaries`](https://exelegch.github.io/manureshed-docs/reference/load_builtin_boundaries.md):
   Load spatial boundaries from OSF
 
-- [`load_builtin_wwtp`](https://cwru-sdle.github.io/manureshed/reference/load_builtin_wwtp.md):
+- [`load_builtin_wwtp`](https://exelegch.github.io/manureshed-docs/reference/load_builtin_wwtp.md):
   Load WWTP data from OSF (2016)
 
-- [`check_builtin_data`](https://cwru-sdle.github.io/manureshed/reference/check_builtin_data.md):
+- [`check_builtin_data`](https://exelegch.github.io/manureshed-docs/reference/check_builtin_data.md):
   Check available datasets and cache status
 
-- [`download_all_data`](https://cwru-sdle.github.io/manureshed/reference/download_all_data.md):
+- [`download_all_data`](https://exelegch.github.io/manureshed-docs/reference/download_all_data.md):
   Download all datasets at once
 
-- [`download_osf_data`](https://cwru-sdle.github.io/manureshed/reference/download_osf_data.md):
+- [`download_osf_data`](https://exelegch.github.io/manureshed-docs/reference/download_osf_data.md):
   Download specific dataset
 
-- [`clear_data_cache`](https://cwru-sdle.github.io/manureshed/reference/clear_data_cache.md):
+- [`clear_data_cache`](https://exelegch.github.io/manureshed-docs/reference/clear_data_cache.md):
   Clear cached datasets
 
 ### High-Level Workflows:
 
-- [`run_builtin_analysis`](https://cwru-sdle.github.io/manureshed/reference/run_builtin_analysis.md):
+- [`run_builtin_analysis`](https://exelegch.github.io/manureshed-docs/reference/run_builtin_analysis.md):
   Complete end-to-end analysis workflow
 
-- [`quick_analysis`](https://cwru-sdle.github.io/manureshed/reference/quick_analysis.md):
+- [`quick_analysis`](https://exelegch.github.io/manureshed-docs/reference/quick_analysis.md):
   Analysis with automatic visualizations
 
-- [`batch_analysis_years`](https://cwru-sdle.github.io/manureshed/reference/batch_analysis_years.md):
+- [`batch_analysis_years`](https://exelegch.github.io/manureshed-docs/reference/batch_analysis_years.md):
   Multi-year analysis workflow
 
 ### Agricultural Classification:
 
-- [`agri_process_nugis`](https://cwru-sdle.github.io/manureshed/reference/agri_process_nugis.md):
+- [`agri_process_nugis`](https://exelegch.github.io/manureshed-docs/reference/agri_process_nugis.md):
   Process and standardize NuGIS data
 
-- [`agri_classify_nitrogen`](https://cwru-sdle.github.io/manureshed/reference/agri_classify_nitrogen.md):
+- [`agri_classify_nitrogen`](https://exelegch.github.io/manureshed-docs/reference/agri_classify_nitrogen.md):
   Classify nitrogen balance
 
-- [`agri_classify_phosphorus`](https://cwru-sdle.github.io/manureshed/reference/agri_classify_phosphorus.md):
+- [`agri_classify_phosphorus`](https://exelegch.github.io/manureshed-docs/reference/agri_classify_phosphorus.md):
   Classify phosphorus balance
 
-- [`agri_classify_complete`](https://cwru-sdle.github.io/manureshed/reference/agri_classify_complete.md):
+- [`agri_classify_complete`](https://exelegch.github.io/manureshed-docs/reference/agri_classify_complete.md):
   Complete agricultural pipeline
 
 ### WWTP Processing:
 
-- [`load_user_wwtp`](https://cwru-sdle.github.io/manureshed/reference/load_user_wwtp.md):
+- [`load_user_wwtp`](https://exelegch.github.io/manureshed-docs/reference/load_user_wwtp.md):
   Load custom WWTP data with flexible formatting
 
-- [`wwtp_clean_data`](https://cwru-sdle.github.io/manureshed/reference/wwtp_clean_data.md):
+- [`wwtp_clean_data`](https://exelegch.github.io/manureshed-docs/reference/wwtp_clean_data.md):
   Clean and filter WWTP data
 
-- [`wwtp_classify_sources`](https://cwru-sdle.github.io/manureshed/reference/wwtp_classify_sources.md):
+- [`wwtp_classify_sources`](https://exelegch.github.io/manureshed-docs/reference/wwtp_classify_sources.md):
   Classify WWTP facilities by load size
 
-- [`convert_load_units`](https://cwru-sdle.github.io/manureshed/reference/convert_load_units.md):
+- [`convert_load_units`](https://exelegch.github.io/manureshed-docs/reference/convert_load_units.md):
   Handle different load units (kg, lbs, tons)
 
 ### Data Integration:
 
-- [`integrate_wwtp_agricultural`](https://cwru-sdle.github.io/manureshed/reference/integrate_wwtp_agricultural.md):
+- [`integrate_wwtp_agricultural`](https://exelegch.github.io/manureshed-docs/reference/integrate_wwtp_agricultural.md):
   Combine WWTP and agricultural data
 
-- [`integrate_complete`](https://cwru-sdle.github.io/manureshed/reference/integrate_complete.md):
+- [`integrate_complete`](https://exelegch.github.io/manureshed-docs/reference/integrate_complete.md):
   Complete integration pipeline
 
-- [`add_texas_huc8`](https://cwru-sdle.github.io/manureshed/reference/add_texas_huc8.md):
+- [`add_texas_huc8`](https://exelegch.github.io/manureshed-docs/reference/add_texas_huc8.md):
   Add Texas HUC8 supplemental data
 
 ### Visualization and Mapping:
 
-- [`map_agricultural_classification`](https://cwru-sdle.github.io/manureshed/reference/map_agricultural_classification.md):
+- [`map_agricultural_classification`](https://exelegch.github.io/manureshed-docs/reference/map_agricultural_classification.md):
   Map nutrient classifications
 
-- [`map_wwtp_points`](https://cwru-sdle.github.io/manureshed/reference/map_wwtp_points.md):
+- [`map_wwtp_points`](https://exelegch.github.io/manureshed-docs/reference/map_wwtp_points.md):
   Map WWTP facility locations
 
-- [`map_wwtp_influence`](https://cwru-sdle.github.io/manureshed/reference/map_wwtp_influence.md):
+- [`map_wwtp_influence`](https://exelegch.github.io/manureshed-docs/reference/map_wwtp_influence.md):
   Map WWTP influence/proportion
 
-- [`get_state_boundaries`](https://cwru-sdle.github.io/manureshed/reference/get_state_boundaries.md):
+- [`get_state_boundaries`](https://exelegch.github.io/manureshed-docs/reference/get_state_boundaries.md):
   Get US state boundaries for mapping
 
 ### Spatial Analysis:
 
-- [`calculate_transition_probabilities`](https://cwru-sdle.github.io/manureshed/reference/calculate_transition_probabilities.md):
+- [`calculate_transition_probabilities`](https://exelegch.github.io/manureshed-docs/reference/calculate_transition_probabilities.md):
   Spatial transition analysis
 
-- [`create_network_plot`](https://cwru-sdle.github.io/manureshed/reference/create_network_plot.md):
+- [`create_network_plot`](https://exelegch.github.io/manureshed-docs/reference/create_network_plot.md):
   Network visualization of transitions
 
-- [`add_centroid_coordinates`](https://cwru-sdle.github.io/manureshed/reference/add_centroid_coordinates.md):
+- [`add_centroid_coordinates`](https://exelegch.github.io/manureshed-docs/reference/add_centroid_coordinates.md):
   Calculate spatial centroids
 
 ### Comparison Analysis:
 
-- [`create_classification_summary`](https://cwru-sdle.github.io/manureshed/reference/create_classification_summary.md):
+- [`create_classification_summary`](https://exelegch.github.io/manureshed-docs/reference/create_classification_summary.md):
   Before/after comparison summaries
 
-- [`plot_before_after_comparison`](https://cwru-sdle.github.io/manureshed/reference/plot_before_after_comparison.md):
+- [`plot_before_after_comparison`](https://exelegch.github.io/manureshed-docs/reference/plot_before_after_comparison.md):
   Comparison bar plots
 
-- [`plot_impact_ratios`](https://cwru-sdle.github.io/manureshed/reference/plot_impact_ratios.md):
+- [`plot_impact_ratios`](https://exelegch.github.io/manureshed-docs/reference/plot_impact_ratios.md):
   Impact ratio visualizations
 
-- [`plot_absolute_changes`](https://cwru-sdle.github.io/manureshed/reference/plot_absolute_changes.md):
+- [`plot_absolute_changes`](https://exelegch.github.io/manureshed-docs/reference/plot_absolute_changes.md):
   Absolute change plots
 
 ### Utility Functions:
 
-- [`get_nutrient_colors`](https://cwru-sdle.github.io/manureshed/reference/get_nutrient_colors.md):
+- [`get_nutrient_colors`](https://exelegch.github.io/manureshed-docs/reference/get_nutrient_colors.md):
   Get color schemes for nutrients
 
-- [`clean_category_names`](https://cwru-sdle.github.io/manureshed/reference/clean_category_names.md):
+- [`clean_category_names`](https://exelegch.github.io/manureshed-docs/reference/clean_category_names.md):
   Clean classification names for display
 
-- [`format_huc8`](https://cwru-sdle.github.io/manureshed/reference/format_huc8.md):
+- [`format_huc8`](https://exelegch.github.io/manureshed-docs/reference/format_huc8.md):
   Format HUC8 codes with leading zeros
 
-- [`get_cropland_threshold`](https://cwru-sdle.github.io/manureshed/reference/get_cropland_threshold.md):
+- [`get_cropland_threshold`](https://exelegch.github.io/manureshed-docs/reference/get_cropland_threshold.md):
   Calculate exclusion thresholds
 
 ## Spatial Scales

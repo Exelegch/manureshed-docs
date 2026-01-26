@@ -197,7 +197,7 @@ documentation
 **Goal:** Analyze Iowa watersheds in 2016
 
 **Steps:** 1. Launch dashboard:
-[`launch_dashboard()`](https://cwru-sdle.github.io/manureshed/reference/launch_dashboard.md)
+[`launch_dashboard()`](https://exelegch.github.io/manureshed-docs/reference/launch_dashboard.md)
 2. Set Scale: HUC8 Watershed 3. Set Year: 2016 4. Set Nutrient: Nitrogen
 5. Check: Include Wastewater Treatment Plants 6. Click: Run Analysis 7.
 Wait for completion notification 8. Explore results in Map tab 9. Click
@@ -489,13 +489,13 @@ messages and screenshots - Describe steps to reproduce
 
 ## Related Vignettes
 
-- [`vignette("getting-started")`](https://cwru-sdle.github.io/manureshed/articles/getting-started.md) -
+- [`vignette("getting-started")`](https://exelegch.github.io/manureshed-docs/articles/getting-started.md) -
   Basic package usage
-- [`vignette("scenario-comparison")`](https://cwru-sdle.github.io/manureshed/articles/scenario-comparison.md) -
+- [`vignette("scenario-comparison")`](https://exelegch.github.io/manureshed-docs/articles/scenario-comparison.md) -
   Compare multiple scenarios
-- [`vignette("advanced-features")`](https://cwru-sdle.github.io/manureshed/articles/advanced-features.md) -
+- [`vignette("advanced-features")`](https://exelegch.github.io/manureshed-docs/articles/advanced-features.md) -
   Advanced analysis techniques
-- [`vignette("data-integration")`](https://cwru-sdle.github.io/manureshed/articles/data-integration.md) -
+- [`vignette("data-integration")`](https://exelegch.github.io/manureshed-docs/articles/data-integration.md) -
   Using custom data
 
 ## Summary

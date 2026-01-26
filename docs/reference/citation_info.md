@@ -41,9 +41,9 @@ This function requires no arguments and can be called simply as
 
 ## See also
 
-[`check_builtin_data`](https://cwru-sdle.github.io/manureshed/reference/check_builtin_data.md)
+[`check_builtin_data`](https://exelegch.github.io/manureshed-docs/reference/check_builtin_data.md)
 for data availability,
-[`health_check`](https://cwru-sdle.github.io/manureshed/reference/health_check.md)
+[`health_check`](https://exelegch.github.io/manureshed-docs/reference/health_check.md)
 for package diagnostics
 
 ## Examples

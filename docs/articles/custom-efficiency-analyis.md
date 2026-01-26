@@ -314,4 +314,4 @@ interpreting results and informing decision-making.
   framework
 
 For more information on standard manureshed methodologies, see
-[`vignette("getting-started")`](https://cwru-sdle.github.io/manureshed/articles/getting-started.md).
+[`vignette("getting-started")`](https://exelegch.github.io/manureshed-docs/articles/getting-started.md).

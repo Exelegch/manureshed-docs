@@ -27,6 +27,7 @@ of wastewater treatment plant (WWTP) discharge data.
 
 ## 🔗 Quick Links
 
+- **Documentation**: <https://exelegch.github.io/manureshed-docs/>
 - **CRAN**: <https://cran.r-project.org/package=manureshed>
 - **OSF Data Repository**: <https://osf.io/g39xa/>
 - **GitHub**: <https://github.com/cwru-sdle/manureshed>
@@ -76,10 +77,10 @@ of wastewater treatment plant (WWTP) discharge data.
 ### 🔄 **End-to-End Workflows**
 
 - **One-function analysis**:
-  [`quick_analysis()`](https://cwru-sdle.github.io/manureshed/reference/quick_analysis.md)
+  [`quick_analysis()`](https://exelegch.github.io/manureshed-docs/reference/quick_analysis.md)
   for complete workflow
 - **Batch processing**: Multi-year analysis with
-  [`batch_analysis_years()`](https://cwru-sdle.github.io/manureshed/reference/batch_analysis_years.md)
+  [`batch_analysis_years()`](https://exelegch.github.io/manureshed-docs/reference/batch_analysis_years.md)
 - **State-specific analysis**: Focus on individual states or regions
 - **Custom thresholds**: Flexible cropland exclusion criteria
 - **Automated outputs**: Maps, data files, and metadata generation
@@ -416,7 +417,7 @@ estimates - Nutrient removal by crops - Biological nitrogen fixation
 **Spatial Scales**: County, HUC8, HUC2
 
 **Citation**: Use
-[`citation_info()`](https://cwru-sdle.github.io/manureshed/reference/citation_info.md)
+[`citation_info()`](https://exelegch.github.io/manureshed-docs/reference/citation_info.md)
 for complete attribution
 
 ### EPA WWTP Discharge Data (2007-2016)
@@ -531,7 +532,7 @@ Management. *Resources, Conservation and Recycling*, 2025.
 ### Data Sources
 
 Use
-[`citation_info()`](https://cwru-sdle.github.io/manureshed/reference/citation_info.md)
+[`citation_info()`](https://exelegch.github.io/manureshed-docs/reference/citation_info.md)
 to display complete citations for: - NuGIS agricultural data - EPA WWTP
 discharge data - Spatial boundary datasets
 
@@ -612,7 +613,7 @@ Centers award 2133576.
 vignette](https://cran.r-project.org/web/packages/manureshed/vignettes/getting-started.html)!
 
 **Questions?** Run
-[`health_check()`](https://cwru-sdle.github.io/manureshed/reference/health_check.md)
+[`health_check()`](https://exelegch.github.io/manureshed-docs/reference/health_check.md)
 to verify your installation, or use
-[`citation_info()`](https://cwru-sdle.github.io/manureshed/reference/citation_info.md)
+[`citation_info()`](https://exelegch.github.io/manureshed-docs/reference/citation_info.md)
 for publication citations.

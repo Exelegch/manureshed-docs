@@ -46,5 +46,5 @@ al., 2026).
 
 When using this package, please cite both the package, methodology
 paper, and the underlying data sources. Use
-[`citation_info()`](https://cwru-sdle.github.io/manureshed/reference/citation_info.md)
+[`citation_info()`](https://exelegch.github.io/manureshed-docs/reference/citation_info.md)
 to display full citation information.

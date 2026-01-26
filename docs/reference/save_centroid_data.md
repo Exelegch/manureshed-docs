@@ -174,35 +174,35 @@ results <- run_builtin_analysis(scale = "county", year = 2016, include_wwtp = TR
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpR9gJJ7/county_agricultural_2016.rds
+#> Saved spatial data to: /tmp/RtmpNpFMAi/county_agricultural_2016.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpR9gJJ7/county_nitrogen_integrated_2016.rds
+#> Saved spatial data to: /tmp/RtmpNpFMAi/county_nitrogen_integrated_2016.rds
 #> File size: 1.1 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpR9gJJ7/county_nitrogen_centroids_2016.csv
+#> Saved centroid data to: /tmp/RtmpNpFMAi/county_nitrogen_centroids_2016.csv
 #> File size: 760.52 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved spatial data to: /tmp/RtmpR9gJJ7/county_phosphorus_integrated_2016.rds
+#> Saved spatial data to: /tmp/RtmpNpFMAi/county_phosphorus_integrated_2016.rds
 #> File size: 1.09 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpR9gJJ7/county_phosphorus_centroids_2016.csv
+#> Saved centroid data to: /tmp/RtmpNpFMAi/county_phosphorus_centroids_2016.csv
 #> File size: 736.85 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved analysis summary to: /tmp/RtmpR9gJJ7/analysis_summary_2016.rds
+#> Saved analysis summary to: /tmp/RtmpNpFMAi/analysis_summary_2016.rds
 #> Format: RDS
-#> File size: 0.77 KB
-#>  Results saved to:/tmp/RtmpR9gJJ7
+#> File size: 0.76 KB
+#>  Results saved to:/tmp/RtmpNpFMAi
 #>   Files created:6
 #> 
 #> ======================================================================
@@ -214,7 +214,7 @@ results <- run_builtin_analysis(scale = "county", year = 2016, include_wwtp = TR
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Spatial units:3112
 #> WWTP facilities:30994
-#> Output directory:/tmp/RtmpR9gJJ7
+#> Output directory:/tmp/RtmpNpFMAi
 #> ======================================================================
 
 # Save centroids for transition analysis
@@ -222,11 +222,11 @@ if ("integrated" %in% names(results) && "nitrogen" %in% names(results$integrated
   centroids <- add_centroid_coordinates(results$integrated$nitrogen)
   save_centroid_data(centroids, scale = "county", nutrient = "nitrogen")
 }
-#> Saved centroid data to: /tmp/RtmpR9gJJ7/county_nitrogen_centroids_2026_20260124.csv
+#> Saved centroid data to: /tmp/RtmpNpFMAi/county_nitrogen_centroids_2026_20260125.csv
 #> File size: 760.52 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> [1] "/tmp/RtmpR9gJJ7/county_nitrogen_centroids_2026_20260124.csv"
+#> [1] "/tmp/RtmpNpFMAi/county_nitrogen_centroids_2026_20260125.csv"
 # }
 ```

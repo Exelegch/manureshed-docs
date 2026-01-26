@@ -53,7 +53,7 @@ health_check(verbose = TRUE)
 #> Detailed Information:
 #> R version:R version 4.5.2 (2025-10-31)
 #> Package version:0.1.1
-#> Install path:/tmp/RtmpxZfm5x/temp_libpath2bbd7163c04c1/manureshed
+#> Install path:/tmp/RtmpeUJW55/temp_libpath2c21f51d1f42e7/manureshed
 #> OSF repository:https://osf.io/g39xa/
 #> Cache location:/home/oda10/.cache/R/manureshed/data
 #> Spatial versions:

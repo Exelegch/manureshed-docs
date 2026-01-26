@@ -3,7 +3,7 @@
 ## Overview
 
 The
-[`compare_scenarios()`](https://cwru-sdle.github.io/manureshed/reference/compare_scenarios.md)
+[`compare_scenarios()`](https://exelegch.github.io/manureshed-docs/reference/compare_scenarios.md)
 function allows you to compare multiple analysis scenarios side-by-side.
 This is useful for:
 
@@ -504,21 +504,21 @@ If scenarios have different nutrients:
 
 ## Related Functions
 
-- [`run_builtin_analysis()`](https://cwru-sdle.github.io/manureshed/reference/run_builtin_analysis.md):
+- [`run_builtin_analysis()`](https://exelegch.github.io/manureshed-docs/reference/run_builtin_analysis.md):
   Run individual scenarios
-- [`batch_analysis_years()`](https://cwru-sdle.github.io/manureshed/reference/batch_analysis_years.md):
+- [`batch_analysis_years()`](https://exelegch.github.io/manureshed-docs/reference/batch_analysis_years.md):
   Analyze multiple years
-- [`run_state_analysis()`](https://cwru-sdle.github.io/manureshed/reference/run_state_analysis.md):
+- [`run_state_analysis()`](https://exelegch.github.io/manureshed-docs/reference/run_state_analysis.md):
   State-specific analysis
-- [`save_plot()`](https://cwru-sdle.github.io/manureshed/reference/save_plot.md):
+- [`save_plot()`](https://exelegch.github.io/manureshed-docs/reference/save_plot.md):
   Save comparison plots
 - `quick_summary()`: Quick validation of results
 
 ## See Also
 
-- [`vignette("getting-started")`](https://cwru-sdle.github.io/manureshed/articles/getting-started.md) -
+- [`vignette("getting-started")`](https://exelegch.github.io/manureshed-docs/articles/getting-started.md) -
   Basic package usage
-- [`vignette("dashboard-guide")`](https://cwru-sdle.github.io/manureshed/articles/dashboard-guide.md) -
+- [`vignette("dashboard-guide")`](https://exelegch.github.io/manureshed-docs/articles/dashboard-guide.md) -
   Interactive dashboard
-- [`vignette("advanced-features")`](https://cwru-sdle.github.io/manureshed/articles/advanced-features.md) -
+- [`vignette("advanced-features")`](https://exelegch.github.io/manureshed-docs/articles/advanced-features.md) -
   Advanced analysis techniques

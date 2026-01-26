@@ -421,10 +421,10 @@ results.
 **Q: My analysis is running slowly. What can I do?** A: Try using a
 smaller spatial scale (HUC2 \< HUC8 \< County in terms of processing
 time), fewer years, or clear the data cache with
-[`clear_data_cache()`](https://cwru-sdle.github.io/manureshed/reference/clear_data_cache.md).
+[`clear_data_cache()`](https://exelegch.github.io/manureshed-docs/reference/clear_data_cache.md).
 
 **Q: How do I cite the package and data?** A: Use
-[`citation_info()`](https://cwru-sdle.github.io/manureshed/reference/citation_info.md)
+[`citation_info()`](https://exelegch.github.io/manureshed-docs/reference/citation_info.md)
 to get proper citations for the package and underlying datasets.
 
 ### Function Help
@@ -449,13 +449,13 @@ test_osf_connection()
 ### Getting More Help
 
 - Check the other vignettes:
-  [`vignette("getting-started")`](https://cwru-sdle.github.io/manureshed/articles/getting-started.md),
-  [`vignette("visualization-guide")`](https://cwru-sdle.github.io/manureshed/articles/visualization-guide.md),
-  [`vignette("advanced-features")`](https://cwru-sdle.github.io/manureshed/articles/advanced-features.md)
+  [`vignette("getting-started")`](https://exelegch.github.io/manureshed-docs/articles/getting-started.md),
+  [`vignette("visualization-guide")`](https://exelegch.github.io/manureshed-docs/articles/visualization-guide.md),
+  [`vignette("advanced-features")`](https://exelegch.github.io/manureshed-docs/articles/advanced-features.md)
 - Look at function documentation: `?function_name`
 - Check the package website or GitHub repository for examples
 - Use
-  [`quick_check()`](https://cwru-sdle.github.io/manureshed/reference/quick_check.md)
+  [`quick_check()`](https://exelegch.github.io/manureshed-docs/reference/quick_check.md)
   to validate your results
 
 The `manureshed` package is designed to work with your data as easily as
@@ -1154,10 +1154,10 @@ results.
 **Q: My analysis is running slowly. What can I do?** A: Try using a
 smaller spatial scale (HUC2 \< HUC8 \< County in terms of processing
 time), fewer years, or clear the data cache with
-[`clear_data_cache()`](https://cwru-sdle.github.io/manureshed/reference/clear_data_cache.md).
+[`clear_data_cache()`](https://exelegch.github.io/manureshed-docs/reference/clear_data_cache.md).
 
 **Q: How do I cite the package and data?** A: Use
-[`citation_info()`](https://cwru-sdle.github.io/manureshed/reference/citation_info.md)
+[`citation_info()`](https://exelegch.github.io/manureshed-docs/reference/citation_info.md)
 to get proper citations for the package and underlying datasets.
 
 **Q: Can I analyze partial years or seasonal data?** A: The package is
@@ -1192,16 +1192,16 @@ test_osf_connection()
 ### Getting More Help
 
 - Check the other vignettes:
-  [`vignette("getting-started")`](https://cwru-sdle.github.io/manureshed/articles/getting-started.md),
-  [`vignette("visualization-guide")`](https://cwru-sdle.github.io/manureshed/articles/visualization-guide.md),
-  [`vignette("advanced-features")`](https://cwru-sdle.github.io/manureshed/articles/advanced-features.md)
+  [`vignette("getting-started")`](https://exelegch.github.io/manureshed-docs/articles/getting-started.md),
+  [`vignette("visualization-guide")`](https://exelegch.github.io/manureshed-docs/articles/visualization-guide.md),
+  [`vignette("advanced-features")`](https://exelegch.github.io/manureshed-docs/articles/advanced-features.md)
 - Look at function documentation: `?function_name`
 - Check the package website or GitHub repository for examples
 - Use
-  [`quick_check()`](https://cwru-sdle.github.io/manureshed/reference/quick_check.md)
+  [`quick_check()`](https://exelegch.github.io/manureshed-docs/reference/quick_check.md)
   to validate your results
 - Run
-  [`health_check()`](https://cwru-sdle.github.io/manureshed/reference/health_check.md)
+  [`health_check()`](https://exelegch.github.io/manureshed-docs/reference/health_check.md)
   if you encounter installation or data loading issues
 
 ### Reporting Issues
@@ -1210,7 +1210,7 @@ If you encounter bugs or have feature requests:
 
 1.  Check that your data format matches the expected format
 2.  Run
-    [`health_check()`](https://cwru-sdle.github.io/manureshed/reference/health_check.md)
+    [`health_check()`](https://exelegch.github.io/manureshed-docs/reference/health_check.md)
     to verify package installation
 3.  Try with built-in data first to isolate the issue
 4.  Document the error message and steps to reproduce

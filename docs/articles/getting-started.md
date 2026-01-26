@@ -52,7 +52,7 @@ municipal nutrient loads affect agricultural areas.
 ## Quick Start - Complete Analysis
 
 The easiest way to get started is with
-[`quick_analysis()`](https://cwru-sdle.github.io/manureshed/reference/quick_analysis.md):
+[`quick_analysis()`](https://exelegch.github.io/manureshed-docs/reference/quick_analysis.md):
 
 ``` r
 # Complete analysis with maps and plots
@@ -276,13 +276,13 @@ citation_info()
 ## Next Steps
 
 - **Advanced Features**: See
-  [`vignette("advanced-features")`](https://cwru-sdle.github.io/manureshed/articles/advanced-features.md)
+  [`vignette("advanced-features")`](https://exelegch.github.io/manureshed-docs/articles/advanced-features.md)
   for state analysis, custom thresholds, parallel processing
 - **Visualization Guide**: See
-  [`vignette("visualization-guide")`](https://cwru-sdle.github.io/manureshed/articles/visualization-guide.md)
+  [`vignette("visualization-guide")`](https://exelegch.github.io/manureshed-docs/articles/visualization-guide.md)
   for detailed mapping options  
 - **Data Integration**: See
-  [`vignette("data-integration")`](https://cwru-sdle.github.io/manureshed/articles/data-integration.md)
+  [`vignette("data-integration")`](https://exelegch.github.io/manureshed-docs/articles/data-integration.md)
   for using custom datasets
 
 ## Getting Help
