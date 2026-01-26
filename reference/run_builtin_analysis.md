@@ -244,35 +244,35 @@ results_2016 <- run_builtin_analysis(
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/huc8_agricultural_2016.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/huc8_agricultural_2016.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/huc8_nitrogen_integrated_2016.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/huc8_nitrogen_integrated_2016.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDnb4tJ/huc8_nitrogen_centroids_2016.csv
+#> Saved centroid data to: /tmp/RtmpJm2r1A/huc8_nitrogen_centroids_2016.csv
 #> File size: 564.94 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/huc8_phosphorus_integrated_2016.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/huc8_phosphorus_integrated_2016.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDnb4tJ/huc8_phosphorus_centroids_2016.csv
+#> Saved centroid data to: /tmp/RtmpJm2r1A/huc8_phosphorus_centroids_2016.csv
 #> File size: 554.05 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved analysis summary to: /tmp/RtmpDnb4tJ/analysis_summary_2016.rds
+#> Saved analysis summary to: /tmp/RtmpJm2r1A/analysis_summary_2016.rds
 #> Format: RDS
 #> File size: 0.78 KB
-#>  Results saved to:/tmp/RtmpDnb4tJ
+#>  Results saved to:/tmp/RtmpJm2r1A
 #>   Files created:6
 #> 
 #> ======================================================================
@@ -284,7 +284,7 @@ results_2016 <- run_builtin_analysis(
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Spatial units:2132
 #> WWTP facilities:30994
-#> Output directory:/tmp/RtmpDnb4tJ
+#> Output directory:/tmp/RtmpJm2r1A
 #> ======================================================================
 
 # Analysis for earlier year (no WWTP available) - nitrogen only
@@ -346,15 +346,15 @@ results_2010 <- run_builtin_analysis(
 #> WWTP analysis skipped
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/county_agricultural_2010.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/county_agricultural_2010.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved analysis summary to: /tmp/RtmpDnb4tJ/analysis_summary_2010.rds
+#> Saved analysis summary to: /tmp/RtmpJm2r1A/analysis_summary_2010.rds
 #> Format: RDS
 #> File size: 0.5 KB
-#>  Results saved to:/tmp/RtmpDnb4tJ
+#>  Results saved to:/tmp/RtmpJm2r1A
 #>   Files created:2
 #> 
 #> ======================================================================
@@ -365,7 +365,7 @@ results_2010 <- run_builtin_analysis(
 #> Year:2010
 #> Nutrients analyzed:nitrogen
 #> Spatial units:3112
-#> Output directory:/tmp/RtmpDnb4tJ
+#> Output directory:/tmp/RtmpJm2r1A
 #> ======================================================================
 
 # Analysis for earlier year with WWTP now available
@@ -466,25 +466,25 @@ results_2010 <- run_builtin_analysis(
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/county_agricultural_2010.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/county_agricultural_2010.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/county_nitrogen_integrated_2010.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/county_nitrogen_integrated_2010.rds
 #> File size: 1.1 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDnb4tJ/county_nitrogen_centroids_2010.csv
+#> Saved centroid data to: /tmp/RtmpJm2r1A/county_nitrogen_centroids_2010.csv
 #> File size: 752.62 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved analysis summary to: /tmp/RtmpDnb4tJ/analysis_summary_2010.rds
+#> Saved analysis summary to: /tmp/RtmpJm2r1A/analysis_summary_2010.rds
 #> Format: RDS
 #> File size: 0.7 KB
-#>  Results saved to:/tmp/RtmpDnb4tJ
+#>  Results saved to:/tmp/RtmpJm2r1A
 #>   Files created:4
 #> 
 #> ======================================================================
@@ -496,7 +496,7 @@ results_2010 <- run_builtin_analysis(
 #> Nutrients analyzed:nitrogen
 #> Spatial units:3112
 #> WWTP facilities:24727
-#> Output directory:/tmp/RtmpDnb4tJ
+#> Output directory:/tmp/RtmpJm2r1A
 #> ======================================================================
 
 # Analysis for year before WWTP availability
@@ -565,15 +565,15 @@ results_2005 <- run_builtin_analysis(
 #> WWTP analysis skipped
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/huc8_agricultural_2005.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/huc8_agricultural_2005.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved analysis summary to: /tmp/RtmpDnb4tJ/analysis_summary_2005.rds
+#> Saved analysis summary to: /tmp/RtmpJm2r1A/analysis_summary_2005.rds
 #> Format: RDS
 #> File size: 0.52 KB
-#>  Results saved to:/tmp/RtmpDnb4tJ
+#>  Results saved to:/tmp/RtmpJm2r1A
 #>   Files created:2
 #> 
 #> ======================================================================
@@ -584,7 +584,7 @@ results_2005 <- run_builtin_analysis(
 #> Year:2005
 #> Nutrients analyzed:phosphorus
 #> Spatial units:2132
-#> Output directory:/tmp/RtmpDnb4tJ
+#> Output directory:/tmp/RtmpJm2r1A
 #> ======================================================================
 # }
 ```

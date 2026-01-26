@@ -224,35 +224,35 @@ results <- run_builtin_analysis(scale = "county", year = 2016)
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/county_agricultural_2016.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/county_agricultural_2016.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/county_nitrogen_integrated_2016.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/county_nitrogen_integrated_2016.rds
 #> File size: 1.1 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDnb4tJ/county_nitrogen_centroids_2016.csv
+#> Saved centroid data to: /tmp/RtmpJm2r1A/county_nitrogen_centroids_2016.csv
 #> File size: 760.52 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/county_phosphorus_integrated_2016.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/county_phosphorus_integrated_2016.rds
 #> File size: 1.09 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDnb4tJ/county_phosphorus_centroids_2016.csv
+#> Saved centroid data to: /tmp/RtmpJm2r1A/county_phosphorus_centroids_2016.csv
 #> File size: 736.84 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved analysis summary to: /tmp/RtmpDnb4tJ/analysis_summary_2016.rds
+#> Saved analysis summary to: /tmp/RtmpJm2r1A/analysis_summary_2016.rds
 #> Format: RDS
 #> File size: 0.77 KB
-#>  Results saved to:/tmp/RtmpDnb4tJ
+#>  Results saved to:/tmp/RtmpJm2r1A
 #>   Files created:6
 #> 
 #> ======================================================================
@@ -264,7 +264,7 @@ results <- run_builtin_analysis(scale = "county", year = 2016)
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Spatial units:3112
 #> WWTP facilities:30994
-#> Output directory:/tmp/RtmpDnb4tJ
+#> Output directory:/tmp/RtmpJm2r1A
 #> ======================================================================
 summarize_results(results)
 #> 
@@ -442,35 +442,35 @@ results <- run_builtin_analysis(
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/huc8_agricultural_2012.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/huc8_agricultural_2012.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/huc8_nitrogen_integrated_2012.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/huc8_nitrogen_integrated_2012.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDnb4tJ/huc8_nitrogen_centroids_2012.csv
+#> Saved centroid data to: /tmp/RtmpJm2r1A/huc8_nitrogen_centroids_2012.csv
 #> File size: 565.04 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved spatial data to: /tmp/RtmpDnb4tJ/huc8_phosphorus_integrated_2012.rds
+#> Saved spatial data to: /tmp/RtmpJm2r1A/huc8_phosphorus_integrated_2012.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDnb4tJ/huc8_phosphorus_centroids_2012.csv
+#> Saved centroid data to: /tmp/RtmpJm2r1A/huc8_phosphorus_centroids_2012.csv
 #> File size: 550.57 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved analysis summary to: /tmp/RtmpDnb4tJ/analysis_summary_2012.rds
+#> Saved analysis summary to: /tmp/RtmpJm2r1A/analysis_summary_2012.rds
 #> Format: RDS
 #> File size: 0.79 KB
-#>  Results saved to:/tmp/RtmpDnb4tJ
+#>  Results saved to:/tmp/RtmpJm2r1A
 #>   Files created:6
 #> 
 #> ======================================================================
@@ -482,7 +482,7 @@ results <- run_builtin_analysis(
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Spatial units:2132
 #> WWTP facilities:35295
-#> Output directory:/tmp/RtmpDnb4tJ
+#> Output directory:/tmp/RtmpJm2r1A
 #> ======================================================================
 summarize_results(results, detailed = TRUE)
 #> 
