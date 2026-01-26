@@ -45,7 +45,7 @@ Description: A comprehensive framework for analyzing agricultural nutrient
     award 2133576. We thank Dr. Robert D. Sabo (U.S. Environmental Protection Agency) 
     for his valuable contributions to the conceptual development and review of this work.
 License: MIT + file LICENSE
-URL: https://osf.io/g39xa/, https://github.com/cwru-sdle/manureshed, https://cwru-sdle.github.io/manureshed
+URL: https://osf.io/g39xa/, https://github.com/cwru-sdle/manureshed, https://exelegch.github.io/manureshed-docs/
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3

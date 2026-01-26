@@ -4,6 +4,7 @@
 [![CRAN status](https://www.r-pkg.org/badges/version/manureshed)](https://CRAN.R-project.org/package=manureshed)
 [![Total Downloads](https://cranlogs.r-pkg.org/badges/grand-total/manureshed)](https://cran.r-project.org/package=manureshed)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![pkgdown](https://github.com/Exelegch/manureshed-docs/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/Exelegch/manureshed-docs/actions/workflows/pkgdown.yaml)
 <!-- badges: end -->
 
 > **Spatiotemporal Nutrient Balance Analysis Across Agricultural and Municipal Systems**
@@ -27,6 +28,7 @@ An R package for analyzing integrated agricultural-municipal nutrient flows and 
 
 ## 🔗 Quick Links
 
+- **Documentation**: https://exelegch.github.io/manureshed-docs/
 - **CRAN**: https://cran.r-project.org/package=manureshed
 - **OSF Data Repository**: https://osf.io/g39xa/
 - **GitHub**: https://github.com/cwru-sdle/manureshed
