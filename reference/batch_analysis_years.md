@@ -140,22 +140,22 @@ batch_results <- batch_analysis_years(
 #>   Sink_Fertilizer: 198 units
 #>   Source: 93 units
 #>   Within_Watershed: 169 units
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_2010/huc8_agricultural_2010.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_2010/huc8_agricultural_2010.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_2010/huc8_nitrogen_integrated_2010.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_2010/huc8_nitrogen_integrated_2010.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDVbc6l/year_2010/huc8_nitrogen_centroids_2010.csv
+#> Saved centroid data to: /tmp/RtmpqiKSvl/year_2010/huc8_nitrogen_centroids_2010.csv
 #> File size: 562.83 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved analysis summary to: /tmp/RtmpDVbc6l/year_2010/analysis_summary_2010.rds
+#> Saved analysis summary to: /tmp/RtmpqiKSvl/year_2010/analysis_summary_2010.rds
 #> Format: RDS
 #> File size: 0.71 KB
 #>   Year2010complete (2132 units)
@@ -219,22 +219,22 @@ batch_results <- batch_analysis_years(
 #>   Sink_Fertilizer: 248 units
 #>   Source: 95 units
 #>   Within_Watershed: 175 units
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_2011/huc8_agricultural_2011.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_2011/huc8_agricultural_2011.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_2011/huc8_nitrogen_integrated_2011.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_2011/huc8_nitrogen_integrated_2011.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDVbc6l/year_2011/huc8_nitrogen_centroids_2011.csv
+#> Saved centroid data to: /tmp/RtmpqiKSvl/year_2011/huc8_nitrogen_centroids_2011.csv
 #> File size: 564.35 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved analysis summary to: /tmp/RtmpDVbc6l/year_2011/analysis_summary_2011.rds
+#> Saved analysis summary to: /tmp/RtmpqiKSvl/year_2011/analysis_summary_2011.rds
 #> Format: RDS
 #> File size: 0.72 KB
 #>   Year2011complete (2132 units)
@@ -298,28 +298,28 @@ batch_results <- batch_analysis_years(
 #>   Sink_Fertilizer: 323 units
 #>   Source: 91 units
 #>   Within_Watershed: 167 units
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_2012/huc8_agricultural_2012.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_2012/huc8_agricultural_2012.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_2012/huc8_nitrogen_integrated_2012.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_2012/huc8_nitrogen_integrated_2012.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDVbc6l/year_2012/huc8_nitrogen_centroids_2012.csv
+#> Saved centroid data to: /tmp/RtmpqiKSvl/year_2012/huc8_nitrogen_centroids_2012.csv
 #> File size: 565.04 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved analysis summary to: /tmp/RtmpDVbc6l/year_2012/analysis_summary_2012.rds
+#> Saved analysis summary to: /tmp/RtmpqiKSvl/year_2012/analysis_summary_2012.rds
 #> Format: RDS
 #> File size: 0.72 KB
 #>   Year2012complete (2132 units)
 #> 
 #> Creating comparative visualizations...
-#> Saved plot to: /tmp/RtmpDVbc6l/trend_nitrogen_2010_2012.png
+#> Saved plot to: /tmp/RtmpqiKSvl/trend_nitrogen_2010_2012.png
 #> Dimensions: 12 x 8 in at 300 DPI
 #> File size: 117.32 KB
 #> Device: png
@@ -330,7 +330,7 @@ batch_results <- batch_analysis_years(
 #> ======================================================================
 #> Years processed:3/3
 #> Scale:huc8
-#> Output directory:/tmp/RtmpDVbc6l
+#> Output directory:/tmp/RtmpqiKSvl
 #> Comparative plots: Created
 #> Batch summary:batch_summary.rds
 #> ======================================================================
@@ -376,12 +376,12 @@ historical_results <- batch_analysis_years(
 #>   Within_County: 343 units
 #> Agricultural classification complete!
 #> Applied threshold: 1235.53 acres
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_1990/county_agricultural_1990.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_1990/county_agricultural_1990.rds
 #> File size: 1.03 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved analysis summary to: /tmp/RtmpDVbc6l/year_1990/analysis_summary_1990.rds
+#> Saved analysis summary to: /tmp/RtmpqiKSvl/year_1990/analysis_summary_1990.rds
 #> Format: RDS
 #> File size: 0.5 KB
 #>   Year1990complete (3112 units)
@@ -410,12 +410,12 @@ historical_results <- batch_analysis_years(
 #>   Within_County: 398 units
 #> Agricultural classification complete!
 #> Applied threshold: 1235.53 acres
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_1991/county_agricultural_1991.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_1991/county_agricultural_1991.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved analysis summary to: /tmp/RtmpDVbc6l/year_1991/analysis_summary_1991.rds
+#> Saved analysis summary to: /tmp/RtmpqiKSvl/year_1991/analysis_summary_1991.rds
 #> Format: RDS
 #> File size: 0.5 KB
 #>   Year1991complete (3112 units)
@@ -444,23 +444,23 @@ historical_results <- batch_analysis_years(
 #>   Within_County: 374 units
 #> Agricultural classification complete!
 #> Applied threshold: 1235.53 acres
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_1992/county_agricultural_1992.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_1992/county_agricultural_1992.rds
 #> File size: 1.03 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved analysis summary to: /tmp/RtmpDVbc6l/year_1992/analysis_summary_1992.rds
+#> Saved analysis summary to: /tmp/RtmpqiKSvl/year_1992/analysis_summary_1992.rds
 #> Format: RDS
 #> File size: 0.5 KB
 #>   Year1992complete (3112 units)
 #> 
 #> Creating comparative visualizations...
-#> Saved plot to: /tmp/RtmpDVbc6l/trend_nitrogen_1990_1992.png
+#> Saved plot to: /tmp/RtmpqiKSvl/trend_nitrogen_1990_1992.png
 #> Dimensions: 12 x 8 in at 300 DPI
 #> File size: 126.65 KB
 #> Device: png
 #>   Creatednitrogentrend plot
-#> Saved plot to: /tmp/RtmpDVbc6l/trend_phosphorus_1990_1992.png
+#> Saved plot to: /tmp/RtmpqiKSvl/trend_phosphorus_1990_1992.png
 #> Dimensions: 12 x 8 in at 300 DPI
 #> File size: 142.95 KB
 #> Device: png
@@ -471,7 +471,7 @@ historical_results <- batch_analysis_years(
 #> ======================================================================
 #> Years processed:3/3
 #> Scale:county
-#> Output directory:/tmp/RtmpDVbc6l
+#> Output directory:/tmp/RtmpqiKSvl
 #> Comparative plots: Created
 #> Batch summary:batch_summary.rds
 #> ======================================================================
@@ -525,12 +525,12 @@ mixed_results <- batch_analysis_years(
 #>   Within_Watershed: 295 units
 #> Agricultural classification complete!
 #> Applied threshold: 1214.18 acres
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_2005/huc8_agricultural_2005.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_2005/huc8_agricultural_2005.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved analysis summary to: /tmp/RtmpDVbc6l/year_2005/analysis_summary_2005.rds
+#> Saved analysis summary to: /tmp/RtmpqiKSvl/year_2005/analysis_summary_2005.rds
 #> Format: RDS
 #> File size: 0.52 KB
 #>   Year2005complete (2132 units)
@@ -594,22 +594,22 @@ mixed_results <- batch_analysis_years(
 #>   Sink_Fertilizer: 198 units
 #>   Source: 93 units
 #>   Within_Watershed: 169 units
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_2010/huc8_agricultural_2010.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_2010/huc8_agricultural_2010.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_2010/huc8_nitrogen_integrated_2010.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_2010/huc8_nitrogen_integrated_2010.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDVbc6l/year_2010/huc8_nitrogen_centroids_2010.csv
+#> Saved centroid data to: /tmp/RtmpqiKSvl/year_2010/huc8_nitrogen_centroids_2010.csv
 #> File size: 562.83 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved analysis summary to: /tmp/RtmpDVbc6l/year_2010/analysis_summary_2010.rds
+#> Saved analysis summary to: /tmp/RtmpqiKSvl/year_2010/analysis_summary_2010.rds
 #> Format: RDS
 #> File size: 0.72 KB
 #>   Year2010complete (2132 units)
@@ -673,28 +673,28 @@ mixed_results <- batch_analysis_years(
 #>   Sink_Fertilizer: 170 units
 #>   Source: 97 units
 #>   Within_Watershed: 155 units
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_2015/huc8_agricultural_2015.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_2015/huc8_agricultural_2015.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpDVbc6l/year_2015/huc8_nitrogen_integrated_2015.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/year_2015/huc8_nitrogen_integrated_2015.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDVbc6l/year_2015/huc8_nitrogen_centroids_2015.csv
+#> Saved centroid data to: /tmp/RtmpqiKSvl/year_2015/huc8_nitrogen_centroids_2015.csv
 #> File size: 564.86 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved analysis summary to: /tmp/RtmpDVbc6l/year_2015/analysis_summary_2015.rds
+#> Saved analysis summary to: /tmp/RtmpqiKSvl/year_2015/analysis_summary_2015.rds
 #> Format: RDS
 #> File size: 0.72 KB
 #>   Year2015complete (2132 units)
 #> 
 #> Creating comparative visualizations...
-#> Saved plot to: /tmp/RtmpDVbc6l/trend_nitrogen_2005_2015.png
+#> Saved plot to: /tmp/RtmpqiKSvl/trend_nitrogen_2005_2015.png
 #> Dimensions: 12 x 8 in at 300 DPI
 #> File size: 115.06 KB
 #> Device: png
@@ -705,7 +705,7 @@ mixed_results <- batch_analysis_years(
 #> ======================================================================
 #> Years processed:3/3
 #> Scale:huc8
-#> Output directory:/tmp/RtmpDVbc6l
+#> Output directory:/tmp/RtmpqiKSvl
 #> Comparative plots: Created
 #> Batch summary:batch_summary.rds
 #> ======================================================================

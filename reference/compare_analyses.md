@@ -155,47 +155,47 @@ results_2010 <- run_builtin_analysis(scale = "county", year = 2010)
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpDVbc6l/county_agricultural_2010.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/county_agricultural_2010.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpDVbc6l/county_nitrogen_integrated_2010.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/county_nitrogen_integrated_2010.rds
 #> File size: 1.1 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDVbc6l/county_nitrogen_centroids_2010.csv
+#> Saved centroid data to: /tmp/RtmpqiKSvl/county_nitrogen_centroids_2010.csv
 #> File size: 752.62 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved spatial data to: /tmp/RtmpDVbc6l/county_phosphorus_integrated_2010.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/county_phosphorus_integrated_2010.rds
 #> File size: 1.09 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDVbc6l/county_phosphorus_centroids_2010.csv
+#> Saved centroid data to: /tmp/RtmpqiKSvl/county_phosphorus_centroids_2010.csv
 #> File size: 720.6 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved analysis summary to: /tmp/RtmpDVbc6l/analysis_summary_2010.rds
+#> Saved analysis summary to: /tmp/RtmpqiKSvl/analysis_summary_2010.rds
 #> Format: RDS
 #> File size: 0.77 KB
-#>  Results saved to:/tmp/RtmpDVbc6l
+#>  Results saved to:/tmp/RtmpqiKSvl
 #>   Files created:6
 #> 
 #> ======================================================================
 #> ANALYSIS COMPLETE
 #> ======================================================================
-#> Processing time:0.11minutes
+#> Processing time:0.09minutes
 #> Scale:county
 #> Year:2010
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Spatial units:3112
 #> WWTP facilities:32275
-#> Output directory:/tmp/RtmpDVbc6l
+#> Output directory:/tmp/RtmpqiKSvl
 #> ======================================================================
 results_2016 <- run_builtin_analysis(scale = "county", year = 2016)
 #> 
@@ -320,35 +320,35 @@ results_2016 <- run_builtin_analysis(scale = "county", year = 2016)
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpDVbc6l/county_agricultural_2016.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/county_agricultural_2016.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpDVbc6l/county_nitrogen_integrated_2016.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/county_nitrogen_integrated_2016.rds
 #> File size: 1.1 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDVbc6l/county_nitrogen_centroids_2016.csv
+#> Saved centroid data to: /tmp/RtmpqiKSvl/county_nitrogen_centroids_2016.csv
 #> File size: 760.52 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved spatial data to: /tmp/RtmpDVbc6l/county_phosphorus_integrated_2016.rds
+#> Saved spatial data to: /tmp/RtmpqiKSvl/county_phosphorus_integrated_2016.rds
 #> File size: 1.09 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpDVbc6l/county_phosphorus_centroids_2016.csv
+#> Saved centroid data to: /tmp/RtmpqiKSvl/county_phosphorus_centroids_2016.csv
 #> File size: 736.84 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved analysis summary to: /tmp/RtmpDVbc6l/analysis_summary_2016.rds
+#> Saved analysis summary to: /tmp/RtmpqiKSvl/analysis_summary_2016.rds
 #> Format: RDS
 #> File size: 0.77 KB
-#>  Results saved to:/tmp/RtmpDVbc6l
+#>  Results saved to:/tmp/RtmpqiKSvl
 #>   Files created:6
 #> 
 #> ======================================================================
@@ -360,7 +360,7 @@ results_2016 <- run_builtin_analysis(scale = "county", year = 2016)
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Spatial units:3112
 #> WWTP facilities:30994
-#> Output directory:/tmp/RtmpDVbc6l
+#> Output directory:/tmp/RtmpqiKSvl
 #> ======================================================================
 comparison <- compare_analyses(results_2010, results_2016, "nitrogen")
 #> 
