@@ -28,7 +28,8 @@ An R package for analyzing integrated agricultural-municipal nutrient flows and 
 
 ## 🔗 Quick Links
 
-- **Documentation**: https://exelegch.github.io/manureshed-docs/
+
+- **Documentations**: https://exelegch.github.io/manureshed-docs/
 - **CRAN**: https://cran.r-project.org/package=manureshed
 - **OSF Data Repository**: https://osf.io/g39xa/
 - **GitHub**: https://github.com/cwru-sdle/manureshed
@@ -169,10 +170,11 @@ ohio <- run_state_analysis(
 
 ### Vignettes and Tutorials
 
-- [**Getting Started**](https://cran.r-project.org/web/packages/manureshed/vignettes/getting-started.html) - Package overview and basic workflows
-- [**Data Integration**](https://cran.r-project.org/web/packages/manureshed/vignettes/data-integration.html) - Using custom WWTP data
-- [**Visualization Guide**](https://cran.r-project.org/web/packages/manureshed/vignettes/visualization-guide.html) - Mapping and plotting options
-- [**Advanced Features**](https://cran.r-project.org/web/packages/manureshed/vignettes/advanced-features.html) - State analysis, custom thresholds, parallel processing
+- [**Interactive Dashboard**](https://exelegch.github.io/manureshed-docs/articles/dashboard-guide.html) - User-friendly interface for non-coders
+- [**Getting Started**](https://exelegch.github.io/manureshed-docs/articles/getting-started.html) - Package overview and basic workflows
+- [**Data Integration**](https://exelegch.github.io/manureshed-docs/articles/data-integration.html) - Using custom WWTP data
+- [**Visualization Guide**](https://exelegch.github.io/manureshed-docs/articles/visualization-guide.html) - Mapping and plotting options
+- [**Advanced Features**](https://exelegch.github.io/manureshed-docs/articles/advanced-features.html) - State analysis, custom thresholds, parallel processing
 
 ### Function Reference
 ```r
@@ -389,6 +391,7 @@ Designed specifically for reproducible research:
 
 **Pre-processing**: Cleaned and quality-controlled in manureshed package
 
+**License**: Public domain (U.S. Government work)
 
 ### Spatial Boundaries
 **Sources**: 
@@ -495,7 +498,7 @@ We welcome contributions! To contribute:
 
 ### Getting Help
 
-- 📖 **Documentation**: Check our [vignettes](https://cran.r-project.org/web/packages/manureshed/vignettes/)
+- 📖 **Documentation**: Check our [All Documentation](https://exelegch.github.io/manureshed-docs/)
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/cwru-sdle/manureshed/issues)
 - 💬 **Questions**: Contact maintainers or open a discussion
 - 📧 **Email**: olatunde.akanbi@case.edu
@@ -517,9 +520,8 @@ This material is based upon financial support by the National Science Foundation
 - **Dr. Robert D. Sabo** (U.S. Environmental Protection Agency) for valuable contributions to conceptual development and review
 - **The Fertilizer Institute (TFI)** and **Plant Nutrition Canada (PNC)** for NuGIS data
 - **U.S. Environmental Protection Agency** for WWTP discharge data
-- This research is supported by the **United States Department of Agriculture (USDA)**, which is an equal opportunity provider and employer
 - R Core Team and CRAN maintainers
-- Spatial R community (`sf`, `ggplot2` developers)
+- Spatial R community (`sf`, `terra`, `ggplot2` developers)
 
 ### Development Team
 - Olatunde D. Akanbi (Lead Developer, ORCID: 0000-0001-7719-2619)
@@ -532,6 +534,6 @@ This material is based upon financial support by the National Science Foundation
 
 ---
 
-**Ready to get started?** Install from CRAN with `install.packages("manureshed")` and check out the [Getting Started vignette](https://cran.r-project.org/web/packages/manureshed/vignettes/getting-started.html)!
+**Ready to get started?** Install from CRAN with `install.packages("manureshed")` and check out the [Getting Started vignette](https://exelegch.github.io/manureshed-docs/articles/getting-started.html)!
 
 **Questions?** Run `health_check()` to verify your installation, or use `citation_info()` for publication citations.
