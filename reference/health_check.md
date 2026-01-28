@@ -52,7 +52,7 @@ health_check(verbose = TRUE)
 #> 
 #> Detailed Information:
 #> R version:R version 4.5.2 (2025-10-31)
-#> Package version:0.1.1
+#> Package version:0.1.2
 #> Install path:/home/runner/work/_temp/Library/manureshed
 #> OSF repository:https://osf.io/g39xa/
 #> Cache location:/home/runner/.cache/R/manureshed/data
