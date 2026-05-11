@@ -2,9 +2,13 @@
 
 Show available years for each data type
 
+Show available years for each data type
+
 ## Usage
 
 ``` r
+list_available_years(scale = NULL)
+
 list_available_years(scale = NULL)
 ```
 
@@ -15,5 +19,7 @@ list_available_years(scale = NULL)
   Character. Spatial scale (optional)
 
 ## Value
+
+Data frame with available years by data type
 
 Data frame with available years by data type

@@ -31,7 +31,7 @@ health_check()
 #> ✓ Spatial libraries: OK
 #> ✓ Mapping capabilities: OK
 #> ✓ Network analysis: OK
-#> ✓ Cache directory: OK
+#> ✓ Cache directory: can be created
 #> -----------------------------------
 #> Health Score:6/6
 #> 
@@ -46,13 +46,13 @@ health_check(verbose = TRUE)
 #> ✓ Spatial libraries: OK
 #> ✓ Mapping capabilities: OK
 #> ✓ Network analysis: OK
-#> ✓ Cache directory: OK
+#> ✓ Cache directory: can be created
 #> -----------------------------------
 #> Health Score:6/6
 #> 
 #> Detailed Information:
-#> R version:R version 4.5.2 (2025-10-31)
-#> Package version:0.1.2
+#> R version:R version 4.6.0 (2026-04-24)
+#> Package version:0.1.5
 #> Install path:/home/runner/work/_temp/Library/manureshed
 #> OSF repository:https://osf.io/g39xa/
 #> Cache location:/home/runner/.cache/R/manureshed/data

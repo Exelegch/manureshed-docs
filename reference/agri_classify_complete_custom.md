@@ -52,7 +52,7 @@ Data frame with complete agricultural classifications for both nutrients
 # \donttest{
 # Load county data
 nugis_data <- load_builtin_nugis("county", 2016)
-#> Created cache directory: /home/runner/.cache/R/manureshed/data
+#> Created cache directory: /tmp/Rtmp0PyVRG/manureshed/data
 #> Downloading nugis_county_data from OSF...
 #>   File ID: 689a80e81a020593fca5e8b4
 #>   Downloaded successfully (1.89 MB)

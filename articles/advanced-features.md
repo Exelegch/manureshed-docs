@@ -1,6 +1,7 @@
 # Advanced Features
 
 ``` r
+
 library(manureshed)
 #> 
 #> =================================================================
@@ -38,7 +39,8 @@ library(manureshed)
 #>       integrated manureshed framework for agricultural and municipal resource management.
 #>       Resources, Conservation and Recycling, https://doi.org/10.1016/j.resconrec.2025.108697
 #> 
-#>   Cached datasets: 6/10 downloaded
+#>   Cache status: No datasets cached yet
+#>   Run download_all_data() to download all datasets
 #> 
 ```
 
@@ -60,6 +62,7 @@ The package excludes areas with little cropland from analysis. The
 default is 500 hectares (1,234 acres), but you can change this:
 
 ``` r
+
 # More restrictive (exclude more areas)
 results_conservative <- run_builtin_analysis(
   scale = "huc8",
@@ -90,6 +93,7 @@ For HUC8 and HUC2 scales, the package calculates thresholds
 automatically based on county data:
 
 ``` r
+
 # Load data for threshold calculation
 county_data <- load_builtin_nugis("county", 2016)
 huc8_data <- load_builtin_nugis("huc8", 2016)
@@ -118,6 +122,7 @@ results <- run_builtin_analysis(
 ### Single State Analysis
 
 ``` r
+
 # Analyze specific states
 iowa_results <- run_state_analysis(
   state = "IA",
@@ -141,6 +146,7 @@ texas_results <- quick_state_analysis(
 ### Multi-State Comparison
 
 ``` r
+
 # Compare agricultural states
 corn_belt_states <- c("IA", "IL", "IN", "NE", "OH")
 state_results <- list()
@@ -177,6 +183,7 @@ print(state_summary)
 ### Multiple Years
 
 ``` r
+
 # Analyze multiple years efficiently
 batch_results <- batch_analysis_years(
   years = 2012:2016,
@@ -196,6 +203,7 @@ print(paste("Successful years:", paste(successful_years, collapse = ", ")))
 For faster processing of multiple analyses:
 
 ``` r
+
 # Use multiple CPU cores
 parallel_results <- batch_analysis_parallel(
   years = 2014:2016,
@@ -215,6 +223,7 @@ print(paste("Successful analyses:", successful, "out of", length(parallel_result
 For comprehensive batch analysis with full visualizations:
 
 ``` r
+
 # Full batch analysis with all visualizations
 enhanced_results <- batch_analysis_enhanced(
   years = 2015:2016,  # Use fewer years for demonstration
@@ -232,6 +241,7 @@ enhanced_results <- batch_analysis_enhanced(
 Test analysis performance:
 
 ``` r
+
 # Benchmark different configurations
 benchmark_results <- benchmark_analysis(
   scale = "county",
@@ -270,6 +280,7 @@ print(timing_comparison)
 ### Memory Management
 
 ``` r
+
 # Clear cache to free up space
 clear_data_cache()
 
@@ -288,6 +299,7 @@ print(paste("OSF connection:", ifelse(connection_ok, "OK", "Failed")))
 Analyze how nutrient classifications change across space:
 
 ``` r
+
 # Run analysis
 results <- run_builtin_analysis(
   scale = "huc8",
@@ -330,6 +342,7 @@ create_network_plot(
 ### Spatial Statistics
 
 ``` r
+
 # Calculate spatial statistics
 library(sf)
 
@@ -369,6 +382,7 @@ neighbor_summary %>%
 ### Research-Specific Analysis
 
 ``` r
+
 # Example: Livestock-intensive regions analysis
 analyze_livestock_regions <- function(states, year = 2016) {
   
@@ -407,6 +421,7 @@ livestock_results <- analyze_livestock_regions(livestock_states, 2016)
 ### Time Series Analysis
 
 ``` r
+
 # Custom time series analysis
 analyze_trends <- function(scale, years, nutrient = "nitrogen") {
   
@@ -466,6 +481,7 @@ print(trend_df)
 ### Export for Other Software
 
 ``` r
+
 # Export for GIS software
 gis_files <- export_for_gis(
   results,
@@ -493,6 +509,7 @@ print(c(gis_files, pub_files, policy_files))
 ### Integration with Other Packages
 
 ``` r
+
 # Example: Using with tigris for custom boundaries
 if (requireNamespace("tigris", quietly = TRUE)) {
   # Get state boundary
@@ -526,6 +543,7 @@ if (requireNamespace("nhdplusTools", quietly = TRUE)) {
 ### Advanced Validation
 
 ``` r
+
 # Comprehensive quality check
 validation_report <- list()
 
@@ -565,6 +583,7 @@ print(str(validation_report))
 ### Performance Tips
 
 ``` r
+
 # 1. Use appropriate scales
 # County: ~3000 units, good for policy analysis
 # HUC8: ~2000 units, good for watershed analysis  
@@ -584,6 +603,7 @@ save_spatial_data(results$agricultural, "intermediate_results.rds")
 ### Reproducibility
 
 ``` r
+
 # Always document your analysis parameters
 analysis_params <- list(
   scale = "huc8",

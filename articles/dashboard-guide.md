@@ -18,6 +18,7 @@ The dashboard requires several additional packages beyond the core
 manureshed package:
 
 ``` r
+
 # Install dashboard dependencies
 install.packages(c(
   "shiny",
@@ -37,6 +38,7 @@ interactive dashboard.
 Once the dependencies are installed, launch the dashboard with:
 
 ``` r
+
 library(manureshed)
 
 # Launch the dashboard
@@ -47,6 +49,7 @@ The dashboard will open in your default web browser. By default, it uses
 a random available port. You can specify a port:
 
 ``` r
+
 # Launch on specific port
 launch_dashboard(port = 3838)
 ```
@@ -270,6 +273,7 @@ Example: `manureshed_huc8_2016_nitrogen.csv`
 Import into spreadsheet software:
 
 ``` r
+
 # In Excel or Google Sheets:
 # File > Import > CSV
 # Select the downloaded file
@@ -278,6 +282,7 @@ Import into spreadsheet software:
 Further analysis in R:
 
 ``` r
+
 # Read downloaded data
 data <- read.csv("manureshed_huc8_2016_nitrogen.csv")
 
@@ -318,6 +323,7 @@ browser - Restart R session - Clear browser cache
 Solution:
 
 ``` r
+
 install.packages(c("shiny", "shinydashboard", "leaflet", "plotly", "DT"))
 ```
 
@@ -326,6 +332,7 @@ install.packages(c("shiny", "shinydashboard", "leaflet", "plotly", "DT"))
 Solution:
 
 ``` r
+
 devtools::install()  # Reinstall package
 ```
 
@@ -375,6 +382,7 @@ Automated workflows
 Use both together:
 
 ``` r
+
 # 1. Explore with dashboard
 launch_dashboard()
 # Identify interesting patterns
@@ -404,6 +412,7 @@ comparison <- compare_scenarios(...)
 Share the code instead:
 
 ``` r
+
 # Colleagues can reproduce with:
 library(manureshed)
 results <- run_builtin_analysis(
@@ -444,6 +453,7 @@ If you want to share the dashboard with your team:
 Deploy to cloud hosting:
 
 ``` r
+
 library(rsconnect)
 
 # Configure account (one time)
@@ -461,6 +471,7 @@ deployApp(
 Deploy to institutional server:
 
 ``` r
+
 # Follow RStudio Connect deployment guide
 # Requires RStudio Connect server
 ```
@@ -477,6 +488,7 @@ for long-term team use - See Shiny Server documentation
 **Package Documentation:**
 
 ``` r
+
 ?launch_dashboard
 ?run_builtin_analysis
 ```

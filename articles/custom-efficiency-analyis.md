@@ -24,6 +24,7 @@ different policy scenarios
 ### Load Required Data
 
 ``` r
+
 library(manureshed)
 
 # Load built-in data for HUC8 watersheds
@@ -34,6 +35,7 @@ boundaries <- load_builtin_boundaries("huc8")
 ### Compare Different Nitrogen Efficiencies
 
 ``` r
+
 # Standard analysis (50% efficiency)
 results_standard <- agri_classify_complete_custom(
   nugis_data, 
@@ -72,6 +74,7 @@ print(table(results_low$N_class))
 ### Visualize Sensitivity Results
 
 ``` r
+
 library(ggplot2)
 library(dplyr)
 
@@ -112,6 +115,7 @@ While phosphorus typically uses 100% efficiency, you can explore
 alternative scenarios:
 
 ``` r
+
 # Standard phosphorus analysis
 results_p_standard <- agri_classify_complete_custom(
   nugis_data,
@@ -141,6 +145,7 @@ print(table(results_p_reduced$P_class))
 Analyze both nutrients simultaneously with custom efficiencies:
 
 ``` r
+
 # Create multiple scenarios
 scenarios <- list(
   baseline = list(n = 0.5, p = 1.0),
@@ -182,6 +187,7 @@ print(sensitivity_summary)
 Visualize spatial differences between efficiency scenarios:
 
 ``` r
+
 # Join with spatial boundaries
 spatial_standard <- boundaries %>%
   left_join(results_standard, by = c("huc8" = "ID"))
@@ -242,6 +248,7 @@ For publication or policy analysis, consider:
 ## Example: Complete Sensitivity Workflow
 
 ``` r
+
 # Define efficiency range for nitrogen
 n_efficiency_values <- seq(0.3, 0.7, by = 0.1)
 

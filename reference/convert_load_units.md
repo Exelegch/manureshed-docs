@@ -2,9 +2,13 @@
 
 Convert loads from various units to US tons
 
+Convert loads from various units to US tons
+
 ## Usage
 
 ``` r
+convert_load_units(load_values, from_unit)
+
 convert_load_units(load_values, from_unit)
 ```
 
@@ -22,9 +26,18 @@ convert_load_units(load_values, from_unit)
 
 Numeric vector of loads in US tons
 
+Numeric vector of loads in US tons
+
 ## Examples
 
 ``` r
+# Convert from kilograms to tons
+kg_loads <- c(1000, 2000, 3000)
+tons_loads <- convert_load_units(kg_loads, "kg")
+
+# Convert from pounds to tons
+lbs_loads <- c(5000, 10000, 15000)
+tons_loads <- convert_load_units(lbs_loads, "lbs")
 # Convert from kilograms to tons
 kg_loads <- c(1000, 2000, 3000)
 tons_loads <- convert_load_units(kg_loads, "kg")

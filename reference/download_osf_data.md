@@ -25,7 +25,10 @@ download_osf_data(
 
 - cache_dir:
 
-  Character. Directory to cache downloaded data (default: user data dir)
+  Character. Directory to cache downloaded data. Defaults to
+  [`tempdir()`](https://rdrr.io/r/base/tempfile.html) for CRAN
+  compliance. For persistent caching across sessions, set
+  `options(manureshed.cache_dir = tools::R_user_dir("manureshed", "cache"))`.
 
 - verbose:
 

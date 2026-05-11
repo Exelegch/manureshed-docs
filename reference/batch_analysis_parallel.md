@@ -40,7 +40,6 @@ results <- batch_analysis_parallel(
 #> Processing 2 years
 #> 
 #> Parallel processing complete:
-#>   Successful: 1/2
-#>   Failed years: 2016
+#>   Successful: 2/2
 # }
 ```

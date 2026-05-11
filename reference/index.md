@@ -47,6 +47,12 @@ Analyze specific states or regions
   : Get State FIPS Code
 - [`filter_by_state()`](https://exelegch.github.io/manureshed-docs/reference/filter_by_state.md)
   : Filter Data by State
+- [`compare_regions()`](https://exelegch.github.io/manureshed-docs/reference/compare_regions.md)
+  : Compare Multiple Regions
+- [`get_region_definitions()`](https://exelegch.github.io/manureshed-docs/reference/get_region_definitions.md)
+  : Get Built-in Region Definitions
+- [`list_regions()`](https://exelegch.github.io/manureshed-docs/reference/list_regions.md)
+  : List Available Regions
 
 ## Data Loading Functions
 
@@ -225,6 +231,8 @@ Helper functions and data validation
   : Test OSF Connection
 - [`citation_info()`](https://exelegch.github.io/manureshed-docs/reference/citation_info.md)
   : Display Package Citation Information
+- [`view_cheatsheet()`](https://exelegch.github.io/manureshed-docs/reference/view_cheatsheet.md)
+  : View Package Cheat Sheet
 - [`get_nutrient_colors()`](https://exelegch.github.io/manureshed-docs/reference/get_nutrient_colors.md)
   : Default Color Schemes for Nutrient Classifications
 - [`get_cropland_threshold()`](https://exelegch.github.io/manureshed-docs/reference/get_cropland_threshold.md)

@@ -21,6 +21,7 @@ The most common use case is comparing agricultural nutrient balances
 with and without wastewater treatment plant data.
 
 ``` r
+
 library(manureshed)
 
 # Run analysis without WWTP
@@ -55,6 +56,7 @@ The comparison returns three main components:
 A data frame with metrics for each scenario:
 
 ``` r
+
 # View the comparison data
 print(comparison$comparison_data)
 ```
@@ -70,6 +72,7 @@ surplus - `total_deficit_kg`: Total nutrient deficit
 Statistical comparison showing differences between scenarios:
 
 ``` r
+
 # View summary
 print(comparison$summary)
 
@@ -85,6 +88,7 @@ metrics - Percent change from base scenario
 Three plots are automatically generated:
 
 ``` r
+
 # Bar chart comparing classification counts
 comparison$plots$bar_chart
 
@@ -102,6 +106,7 @@ comparison$plots$percent_change
 Compare more than two scenarios:
 
 ``` r
+
 # Create three different scenarios
 conservative <- run_builtin_analysis(
   scale = "huc8",
@@ -144,6 +149,7 @@ multi_comparison$plots$bar_chart
 Compare the same parameters across different years:
 
 ``` r
+
 # Analyze multiple years
 year_2010 <- run_builtin_analysis(
   scale = "county",
@@ -183,6 +189,7 @@ temporal$plots$percent_change
 Compare the same year at different spatial scales:
 
 ``` r
+
 county_scale <- run_builtin_analysis(
   scale = "county",
   year = 2016,
@@ -221,6 +228,7 @@ print(scale_comp$comparison_data)
 Save comparison plots to files:
 
 ``` r
+
 # Create output directory
 output_dir <- "scenario_comparison_results"
 dir.create(output_dir, showWarnings = FALSE)
@@ -250,6 +258,7 @@ save_plot(
 Export comparison data to CSV:
 
 ``` r
+
 # Save comparison data
 write.csv(
   comparison$comparison_data,
@@ -270,6 +279,7 @@ write.csv(
 Have plots automatically saved:
 
 ``` r
+
 # Comparison with automatic plot saving
 comparison <- compare_scenarios(
   scenario_list = list(
@@ -288,6 +298,7 @@ comparison <- compare_scenarios(
 Positive vs. negative changes:
 
 ``` r
+
 # Extract differences
 diffs <- comparison$summary$differences
 
@@ -320,6 +331,7 @@ base scenario.
 Evaluate the impact of adding WWTP nutrient recovery:
 
 ``` r
+
 # Current state (no WWTP recovery)
 current <- run_builtin_analysis(
   scale = "huc8",
@@ -352,6 +364,7 @@ cat("WWTP recovery could help", abs(sinks_helped), "deficit areas\n")
 Test sensitivity to cropland threshold:
 
 ``` r
+
 thresholds <- c(500, 1000, 1234, 1500, 2000)
 results <- list()
 
@@ -379,6 +392,7 @@ print(excluded_counts)
 Compare different states or regions:
 
 ``` r
+
 # Iowa
 iowa <- run_state_analysis(
   state = "IA",
@@ -414,6 +428,7 @@ Compare scenarios that differ in **one key aspect** for clearest
 interpretation:
 
 ``` r
+
 # GOOD: Only WWTP inclusion changes
 compare_scenarios(list(
   "No WWTP" = run_builtin_analysis(year=2016, include_wwtp=FALSE),
@@ -432,6 +447,7 @@ compare_scenarios(list(
 Use descriptive names that explain what differs:
 
 ``` r
+
 # GOOD names
 compare_scenarios(list(
   "2016 Agricultural Only" = scenario1,
@@ -450,6 +466,7 @@ compare_scenarios(list(
 Save parameters with results:
 
 ``` r
+
 # Create a metadata file
 metadata <- data.frame(
   scenario = c("Base", "WWTP"),
@@ -467,6 +484,7 @@ write.csv(metadata, "scenario_metadata.csv", row.names = FALSE)
 For year-over-year comparisons, consider whether changes are meaningful:
 
 ``` r
+
 # Small changes might not be meaningful
 diffs <- comparison$summary$differences
 
@@ -483,6 +501,7 @@ If comparing scenarios with different scales, metrics won’t be directly
 comparable:
 
 ``` r
+
 # This comparison has limited value
 compare_scenarios(list(
   "County" = county_results,  # ~3000 units
@@ -498,6 +517,7 @@ compare_scenarios(list(
 If scenarios have different nutrients:
 
 ``` r
+
 # One has nitrogen, other has phosphorus - won't compare well
 # Make sure both scenarios analyze the same nutrient
 ```

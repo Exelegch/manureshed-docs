@@ -1,6 +1,7 @@
 # Getting Started with manureshed
 
 ``` r
+
 library(manureshed)
 #> 
 #> =================================================================
@@ -38,7 +39,8 @@ library(manureshed)
 #>       integrated manureshed framework for agricultural and municipal resource management.
 #>       Resources, Conservation and Recycling, https://doi.org/10.1016/j.resconrec.2025.108697
 #> 
-#>   Cached datasets: 6/10 downloaded
+#>   Cache status: No datasets cached yet
+#>   Run download_all_data() to download all datasets
 #> 
 ```
 
@@ -52,6 +54,7 @@ municipal nutrient loads affect agricultural areas.
 ## View cheatsheet
 
 ``` r
+
 view_cheatsheet()
 ```
 
@@ -61,6 +64,7 @@ The easiest way to get started is with
 [`quick_analysis()`](https://exelegch.github.io/manureshed-docs/reference/quick_analysis.md):
 
 ``` r
+
 # Complete analysis with maps and plots
 results <- quick_analysis(
   scale = "huc8",           # Choose: "county", "huc8", or "huc2"
@@ -78,6 +82,7 @@ This creates: - Classification maps - WWTP facility maps
 ### 1. Check Available Data
 
 ``` r
+
 # See what data is available
 check_builtin_data()
 
@@ -88,6 +93,7 @@ download_all_data()
 ### 2. Basic Agricultural Analysis
 
 ``` r
+
 # Analyze just agricultural data
 results <- run_builtin_analysis(
   scale = "county",
@@ -103,6 +109,7 @@ summarize_results(results)
 ### 3. Add WWTP Data
 
 ``` r
+
 # Analysis with wastewater plants (2007-2016 available)
 results_wwtp <- run_builtin_analysis(
   scale = "huc8",
@@ -131,6 +138,7 @@ Each spatial unit gets classified into:
 ### Accessing Results
 
 ``` r
+
 # Agricultural data with classifications
 agri_data <- results$agricultural
 
@@ -149,6 +157,7 @@ parameters <- results$parameters
 ### Classification Maps
 
 ``` r
+
 # Basic nitrogen map
 n_map <- map_agricultural_classification(
   data = results$agricultural,
@@ -164,6 +173,7 @@ save_plot(n_map, "nitrogen_map.png", width = 10, height = 8)
 ### WWTP Maps
 
 ``` r
+
 # Map WWTP facilities
 facility_map <- map_wwtp_points(
   results$wwtp$nitrogen$spatial_data,
@@ -184,6 +194,7 @@ influence_map <- map_wwtp_influence(
 ### Single Years
 
 ``` r
+
 # Any year 1987-2016 for agricultural data
 results_1990 <- run_builtin_analysis(scale = "county", year = 1990, 
                                      nutrients = "nitrogen", include_wwtp = FALSE)
@@ -199,6 +210,7 @@ results_2012 <- run_builtin_analysis(scale = "huc8", year = 2012,
 ### Multiple Years
 
 ``` r
+
 # Analyze several years at once
 batch_results <- batch_analysis_years(
   years = 2014:2016,
@@ -213,6 +225,7 @@ batch_results <- batch_analysis_years(
 For years outside 2007-2016, provide your own WWTP data:
 
 ``` r
+
 # Use your own WWTP files
 results_2020 <- run_builtin_analysis(
   scale = "huc8",
@@ -227,6 +240,7 @@ results_2020 <- run_builtin_analysis(
 ## State-Specific Analysis
 
 ``` r
+
 # Analyze a specific state
 texas_results <- run_state_analysis(
   state = "TX",
@@ -248,6 +262,7 @@ ohio_quick <- quick_state_analysis(
 ## Loading Individual Datasets
 
 ``` r
+
 # Load specific datasets
 county_2016 <- load_builtin_nugis("county", 2016)
 huc8_boundaries <- load_builtin_boundaries("huc8")
@@ -262,6 +277,7 @@ list_available_years()
 ### Memory Management
 
 ``` r
+
 # For large analyses, clear cache if needed
 clear_data_cache()
 
@@ -272,6 +288,7 @@ health_check()
 ### Quality Checks
 
 ``` r
+
 # Always validate your results
 quick_check(results)
 
@@ -294,6 +311,7 @@ citation_info()
 ## Getting Help
 
 ``` r
+
 # Function documentation
 ?run_builtin_analysis
 ?quick_analysis

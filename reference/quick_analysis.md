@@ -239,77 +239,77 @@ results <- quick_analysis(
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpqiKSvl/huc8_agricultural_2012.rds
+#> Saved spatial data to: /tmp/Rtmp0PyVRG/huc8_agricultural_2012.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpqiKSvl/huc8_nitrogen_integrated_2012.rds
+#> Saved spatial data to: /tmp/Rtmp0PyVRG/huc8_nitrogen_integrated_2012.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpqiKSvl/huc8_nitrogen_centroids_2012.csv
+#> Saved centroid data to: /tmp/Rtmp0PyVRG/huc8_nitrogen_centroids_2012.csv
 #> File size: 565.04 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved spatial data to: /tmp/RtmpqiKSvl/huc8_phosphorus_integrated_2012.rds
+#> Saved spatial data to: /tmp/Rtmp0PyVRG/huc8_phosphorus_integrated_2012.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpqiKSvl/huc8_phosphorus_centroids_2012.csv
+#> Saved centroid data to: /tmp/Rtmp0PyVRG/huc8_phosphorus_centroids_2012.csv
 #> File size: 550.57 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved analysis summary to: /tmp/RtmpqiKSvl/analysis_summary_2012.rds
+#> Saved analysis summary to: /tmp/Rtmp0PyVRG/analysis_summary_2012.rds
 #> Format: RDS
 #> File size: 0.79 KB
-#>  Results saved to:/tmp/RtmpqiKSvl
+#>  Results saved to:/tmp/Rtmp0PyVRG
 #>   Files created:6
 #> 
 #> ======================================================================
 #> ANALYSIS COMPLETE
 #> ======================================================================
-#> Processing time:0.1minutes
+#> Processing time:0.08minutes
 #> Scale:huc8
 #> Year:2012
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Spatial units:2132
 #> WWTP facilities:35295
-#> Output directory:/tmp/RtmpqiKSvl
+#> Output directory:/tmp/Rtmp0PyVRG
 #> ======================================================================
 #> Generating visualizations...
 #>   Creatingnitrogenvisualizations...
 #> Retrieving data for the year 2024
-#>   |                                                                              |                                                                      |   0%  |                                                                              |==                                                                    |   3%  |                                                                              |===                                                                   |   5%  |                                                                              |====                                                                  |   6%  |                                                                              |=====                                                                 |   7%  |                                                                              |======                                                                |   9%  |                                                                              |=======                                                               |  11%  |                                                                              |==========                                                            |  15%  |                                                                              |=============                                                         |  19%  |                                                                              |===============                                                       |  21%  |                                                                              |==================                                                    |  26%  |                                                                              |======================                                                |  31%  |                                                                              |=======================                                               |  33%  |                                                                              |===========================================================           |  84%  |                                                                              |======================================================================| 100%
-#> Saved plot to: /tmp/RtmpqiKSvl/map_agricultural_nitrogen_2012.png
+#>   |                                                                              |                                                                      |   0%  |                                                                              |==                                                                    |   3%  |                                                                              |===                                                                   |   4%  |                                                                              |====                                                                  |   5%  |                                                                              |====                                                                  |   6%  |                                                                              |=====                                                                 |   7%  |                                                                              |======                                                                |   9%  |                                                                              |=======                                                               |  10%  |                                                                              |========                                                              |  11%  |                                                                              |===========                                                           |  16%  |                                                                              |=============                                                         |  18%  |                                                                              |===============                                                       |  21%  |                                                                              |================                                                      |  22%  |                                                                              |================                                                      |  23%  |                                                                              |==================                                                    |  25%  |                                                                              |==================                                                    |  26%  |                                                                              |====================                                                  |  29%  |                                                                              |======================                                                |  31%  |                                                                              |=======================                                               |  32%  |                                                                              |========================                                              |  34%  |                                                                              |========================                                              |  35%  |                                                                              |=========================                                             |  36%  |                                                                              |==========================                                            |  37%  |                                                                              |===========================                                           |  38%  |                                                                              |============================                                          |  39%  |                                                                              |============================                                          |  40%  |                                                                              |=============================                                         |  41%  |                                                                              |=============================                                         |  42%  |                                                                              |==============================                                        |  43%  |                                                                              |===============================                                       |  44%  |                                                                              |================================                                      |  46%  |                                                                              |=================================                                     |  46%  |                                                                              |==================================                                    |  48%  |                                                                              |===================================                                   |  50%  |                                                                              |====================================                                  |  52%  |                                                                              |=====================================                                 |  53%  |                                                                              |======================================                                |  54%  |                                                                              |=======================================                               |  56%  |                                                                              |========================================                              |  58%  |                                                                              |=========================================                             |  58%  |                                                                              |=========================================                             |  59%  |                                                                              |=============================================                         |  64%  |                                                                              |==============================================                        |  66%  |                                                                              |================================================                      |  68%  |                                                                              |==================================================                    |  71%  |                                                                              |===================================================                   |  73%  |                                                                              |=====================================================                 |  76%  |                                                                              |======================================================                |  77%  |                                                                              |=======================================================               |  79%  |                                                                              |=========================================================             |  81%  |                                                                              |============================================================          |  85%  |                                                                              |===============================================================       |  90%  |                                                                              |=================================================================     |  93%  |                                                                              |===================================================================   |  95%  |                                                                              |====================================================================  |  97%  |                                                                              |===================================================================== |  98%  |                                                                              |===================================================================== |  99%  |                                                                              |======================================================================| 100%
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_agricultural_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1639.32 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_combined_nitrogen_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_combined_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1646.81 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_wwtp_influence_nitrogen_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_wwtp_influence_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1689.25 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_wwtp_facilities_nitrogen_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_wwtp_facilities_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1190.23 KB
 #> Device: png
-#> Created network plot: /tmp/RtmpqiKSvl/network_agricultural_nitrogen_2012.png
-#> Created network plot: /tmp/RtmpqiKSvl/network_combined_nitrogen_2012.png
+#> Created network plot: /tmp/Rtmp0PyVRG/network_agricultural_nitrogen_2012.png
+#> Created network plot: /tmp/Rtmp0PyVRG/network_combined_nitrogen_2012.png
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-28 01:23:07.334108
+#> created_date:2026-05-11 16:22:11.033938
 #> nutrient:nitrogen
 #> analysis_type:agricultural
 #> n_categories:4
@@ -318,14 +318,14 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/RtmpqiKSvl/transitions_agricultural_nitrogen_2012.csv
-#> Saved metadata to: /tmp/RtmpqiKSvl/transitions_agricultural_nitrogen_2012_metadata.txt
+#> Saved transition matrix to: /tmp/Rtmp0PyVRG/transitions_agricultural_nitrogen_2012.csv
+#> Saved metadata to: /tmp/Rtmp0PyVRG/transitions_agricultural_nitrogen_2012_metadata.txt
 #> File size: 0.19 KB
 #> Matrix dimensions: 4 x 4
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-28 01:23:07.338606
+#> created_date:2026-05-11 16:22:11.037278
 #> nutrient:nitrogen
 #> analysis_type:combined
 #> n_categories:4
@@ -334,49 +334,49 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/RtmpqiKSvl/transitions_combined_nitrogen_2012.csv
-#> Saved metadata to: /tmp/RtmpqiKSvl/transitions_combined_nitrogen_2012_metadata.txt
+#> Saved transition matrix to: /tmp/Rtmp0PyVRG/transitions_combined_nitrogen_2012.csv
+#> Saved metadata to: /tmp/Rtmp0PyVRG/transitions_combined_nitrogen_2012_metadata.txt
 #> File size: 0.2 KB
 #> Matrix dimensions: 4 x 4
-#> Saved plot to: /tmp/RtmpqiKSvl/comparison_nitrogen_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/comparison_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 83.44 KB
 #> Device: png
-#> Saved plot to: /tmp/RtmpqiKSvl/impact_nitrogen_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/impact_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 79.01 KB
 #> Device: png
-#> Saved plot to: /tmp/RtmpqiKSvl/changes_nitrogen_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/changes_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 81.27 KB
 #> Device: png
 #>   Creatingphosphorusvisualizations...
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_agricultural_phosphorus_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_agricultural_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1536.55 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_combined_phosphorus_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_combined_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1547.15 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_wwtp_influence_phosphorus_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_wwtp_influence_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1676.75 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_wwtp_facilities_phosphorus_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_wwtp_facilities_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1248.83 KB
 #> Device: png
-#> Created network plot: /tmp/RtmpqiKSvl/network_agricultural_phosphorus_2012.png
-#> Created network plot: /tmp/RtmpqiKSvl/network_combined_phosphorus_2012.png
+#> Created network plot: /tmp/Rtmp0PyVRG/network_agricultural_phosphorus_2012.png
+#> Created network plot: /tmp/Rtmp0PyVRG/network_combined_phosphorus_2012.png
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-28 01:23:16.825474
+#> created_date:2026-05-11 16:22:18.869313
 #> nutrient:phosphorus
 #> analysis_type:agricultural
 #> n_categories:4
@@ -385,14 +385,14 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/RtmpqiKSvl/transitions_agricultural_phosphorus_2012.csv
-#> Saved metadata to: /tmp/RtmpqiKSvl/transitions_agricultural_phosphorus_2012_metadata.txt
+#> Saved transition matrix to: /tmp/Rtmp0PyVRG/transitions_agricultural_phosphorus_2012.csv
+#> Saved metadata to: /tmp/Rtmp0PyVRG/transitions_agricultural_phosphorus_2012_metadata.txt
 #> File size: 0.2 KB
 #> Matrix dimensions: 4 x 4
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-28 01:23:16.830344
+#> created_date:2026-05-11 16:22:18.872827
 #> nutrient:phosphorus
 #> analysis_type:combined
 #> n_categories:4
@@ -401,37 +401,37 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/RtmpqiKSvl/transitions_combined_phosphorus_2012.csv
-#> Saved metadata to: /tmp/RtmpqiKSvl/transitions_combined_phosphorus_2012_metadata.txt
+#> Saved transition matrix to: /tmp/Rtmp0PyVRG/transitions_combined_phosphorus_2012.csv
+#> Saved metadata to: /tmp/Rtmp0PyVRG/transitions_combined_phosphorus_2012_metadata.txt
 #> File size: 0.2 KB
 #> Matrix dimensions: 4 x 4
-#> Saved plot to: /tmp/RtmpqiKSvl/comparison_phosphorus_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/comparison_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 84.42 KB
 #> Device: png
-#> Saved plot to: /tmp/RtmpqiKSvl/impact_phosphorus_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/impact_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 79.21 KB
 #> Device: png
-#> Saved plot to: /tmp/RtmpqiKSvl/changes_phosphorus_2012.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/changes_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 83.8 KB
 #> Device: png
 #>   Generating analysis report...
-#> Generated analysis report: /tmp/RtmpqiKSvl/analysis_report_2012.html
+#> Generated analysis report: /tmp/Rtmp0PyVRG/analysis_report_2012.html
 #> Format: HTML
 #>  Visualization complete
 #>   Files created:25
 #>   By type:data_nitrogen ( 1 ), data_phosphorus ( 1 ), facilities_nitrogen_map ( 1 ), facilities_phosphorus_map ( 1 ), influence_nitrogen_map ( 1 ), influence_phosphorus_map ( 1 ), nitrogen ( 3 ), nitrogen_map ( 2 ), nitrogen_network ( 2 ), nitrogen_transitions ( 2 ), phosphorus ( 3 ), phosphorus_map ( 2 ), phosphorus_network ( 2 ), phosphorus_transitions ( 2 ), report ( 1 )
 #>   Resolution:medium(11x6 @ 300 DPI)
-#>   Total time:0.43minutes
+#>   Total time:0.58minutes
 #> 
 #> ======================================================================
 #> QUICK ANALYSIS COMPLETE
 #> ======================================================================
-#> Analysis + Visualization time:0.43minutes
+#> Analysis + Visualization time:0.58minutes
 #> Output files:29
-#> Output directory:/tmp/RtmpqiKSvl
+#> Output directory:/tmp/Rtmp0PyVRG
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Report generated:analysis_report_2012.html
 #> ======================================================================
@@ -506,15 +506,15 @@ results <- quick_analysis(
 #> WWTP analysis skipped
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpqiKSvl/county_agricultural_2005.rds
+#> Saved spatial data to: /tmp/Rtmp0PyVRG/county_agricultural_2005.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved analysis summary to: /tmp/RtmpqiKSvl/analysis_summary_2005.rds
+#> Saved analysis summary to: /tmp/Rtmp0PyVRG/analysis_summary_2005.rds
 #> Format: RDS
 #> File size: 0.5 KB
-#>  Results saved to:/tmp/RtmpqiKSvl
+#>  Results saved to:/tmp/Rtmp0PyVRG
 #>   Files created:2
 #> 
 #> ======================================================================
@@ -525,12 +525,12 @@ results <- quick_analysis(
 #> Year:2005
 #> Nutrients analyzed:nitrogen
 #> Spatial units:3112
-#> Output directory:/tmp/RtmpqiKSvl
+#> Output directory:/tmp/Rtmp0PyVRG
 #> ======================================================================
 #> Generating visualizations...
 #>   Creatingnitrogenvisualizations...
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_agricultural_nitrogen_2005.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_agricultural_nitrogen_2005.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1202.14 KB
 #> Device: png
@@ -538,14 +538,14 @@ results <- quick_analysis(
 #>   Files created:1
 #>   By type:nitrogen_map ( 1 )
 #>   Resolution:medium(11x6 @ 300 DPI)
-#>   Total time:0.04minutes
+#>   Total time:0.03minutes
 #> 
 #> ======================================================================
 #> QUICK ANALYSIS COMPLETE
 #> ======================================================================
-#> Analysis + Visualization time:0.04minutes
+#> Analysis + Visualization time:0.03minutes
 #> Output files:1
-#> Output directory:/tmp/RtmpqiKSvl
+#> Output directory:/tmp/Rtmp0PyVRG
 #> Nutrients analyzed:nitrogen
 #> ======================================================================
 
@@ -665,25 +665,25 @@ results <- quick_analysis(
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpqiKSvl/huc8_agricultural_2008.rds
+#> Saved spatial data to: /tmp/Rtmp0PyVRG/huc8_agricultural_2008.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpqiKSvl/huc8_phosphorus_integrated_2008.rds
+#> Saved spatial data to: /tmp/Rtmp0PyVRG/huc8_phosphorus_integrated_2008.rds
 #> File size: 7.14 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpqiKSvl/huc8_phosphorus_centroids_2008.csv
+#> Saved centroid data to: /tmp/Rtmp0PyVRG/huc8_phosphorus_centroids_2008.csv
 #> File size: 545.12 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved analysis summary to: /tmp/RtmpqiKSvl/analysis_summary_2008.rds
+#> Saved analysis summary to: /tmp/Rtmp0PyVRG/analysis_summary_2008.rds
 #> Format: RDS
-#> File size: 0.71 KB
-#>  Results saved to:/tmp/RtmpqiKSvl
+#> File size: 0.72 KB
+#>  Results saved to:/tmp/Rtmp0PyVRG
 #>   Files created:4
 #> 
 #> ======================================================================
@@ -695,36 +695,36 @@ results <- quick_analysis(
 #> Nutrients analyzed:phosphorus
 #> Spatial units:2132
 #> WWTP facilities:6838
-#> Output directory:/tmp/RtmpqiKSvl
+#> Output directory:/tmp/Rtmp0PyVRG
 #> ======================================================================
 #> Generating visualizations...
 #>   Creatingphosphorusvisualizations...
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_agricultural_phosphorus_2008.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_agricultural_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 4582.24 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_combined_phosphorus_2008.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_combined_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 4606.45 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_wwtp_influence_phosphorus_2008.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_wwtp_influence_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 5047.38 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpqiKSvl/map_wwtp_facilities_phosphorus_2008.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/map_wwtp_facilities_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 3453.9 KB
 #> Device: png
-#> Created network plot: /tmp/RtmpqiKSvl/network_agricultural_phosphorus_2008.png
-#> Created network plot: /tmp/RtmpqiKSvl/network_combined_phosphorus_2008.png
+#> Created network plot: /tmp/Rtmp0PyVRG/network_agricultural_phosphorus_2008.png
+#> Created network plot: /tmp/Rtmp0PyVRG/network_combined_phosphorus_2008.png
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-28 01:23:35.202066
+#> created_date:2026-05-11 16:22:33.308572
 #> nutrient:phosphorus
 #> analysis_type:agricultural
 #> n_categories:4
@@ -733,14 +733,14 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/RtmpqiKSvl/transitions_agricultural_phosphorus_2008.csv
-#> Saved metadata to: /tmp/RtmpqiKSvl/transitions_agricultural_phosphorus_2008_metadata.txt
+#> Saved transition matrix to: /tmp/Rtmp0PyVRG/transitions_agricultural_phosphorus_2008.csv
+#> Saved metadata to: /tmp/Rtmp0PyVRG/transitions_agricultural_phosphorus_2008_metadata.txt
 #> File size: 0.2 KB
 #> Matrix dimensions: 4 x 4
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-28 01:23:35.206991
+#> created_date:2026-05-11 16:22:33.312291
 #> nutrient:phosphorus
 #> analysis_type:combined
 #> n_categories:4
@@ -749,19 +749,19 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/RtmpqiKSvl/transitions_combined_phosphorus_2008.csv
-#> Saved metadata to: /tmp/RtmpqiKSvl/transitions_combined_phosphorus_2008_metadata.txt
+#> Saved transition matrix to: /tmp/Rtmp0PyVRG/transitions_combined_phosphorus_2008.csv
+#> Saved metadata to: /tmp/Rtmp0PyVRG/transitions_combined_phosphorus_2008_metadata.txt
 #> File size: 0.2 KB
 #> Matrix dimensions: 4 x 4
-#> Saved plot to: /tmp/RtmpqiKSvl/comparison_phosphorus_2008.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/comparison_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 190.9 KB
 #> Device: png
-#> Saved plot to: /tmp/RtmpqiKSvl/impact_phosphorus_2008.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/impact_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 185.55 KB
 #> Device: png
-#> Saved plot to: /tmp/RtmpqiKSvl/changes_phosphorus_2008.png
+#> Saved plot to: /tmp/Rtmp0PyVRG/changes_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 190.03 KB
 #> Device: png
@@ -769,14 +769,14 @@ results <- quick_analysis(
 #>   Files created:12
 #>   By type:data_phosphorus ( 1 ), facilities_phosphorus_map ( 1 ), influence_phosphorus_map ( 1 ), phosphorus ( 3 ), phosphorus_map ( 2 ), phosphorus_network ( 2 ), phosphorus_transitions ( 2 )
 #>   Resolution:high(16x9 @ 450 DPI)
-#>   Total time:0.3minutes
+#>   Total time:0.24minutes
 #> 
 #> ======================================================================
 #> QUICK ANALYSIS COMPLETE
 #> ======================================================================
-#> Analysis + Visualization time:0.3minutes
+#> Analysis + Visualization time:0.24minutes
 #> Output files:14
-#> Output directory:/tmp/RtmpqiKSvl
+#> Output directory:/tmp/Rtmp0PyVRG
 #> Nutrients analyzed:phosphorus
 #> ======================================================================
 # }

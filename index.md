@@ -98,6 +98,7 @@ of wastewater treatment plant (WWTP) discharge data.
 ### From CRAN (Recommended)
 
 ``` r
+
 # Install the stable version from CRAN
 install.packages("manureshed")
 ```
@@ -105,6 +106,7 @@ install.packages("manureshed")
 ### Development Version from GitHub
 
 ``` r
+
 # Install development version with latest features
 # install.packages("devtools")
 devtools::install_github("cwru-sdle/manureshed")
@@ -113,6 +115,7 @@ devtools::install_github("cwru-sdle/manureshed")
 ### Install Recommended Packages
 
 ``` r
+
 # Enhanced visualization and spatial analysis
 install.packages(c("ggplot2", "sf", "dplyr", "tidyr", "viridis"))
 
@@ -125,6 +128,7 @@ install.packages(c("tigris", "nhdplusTools", "igraph", "cowplot"))
 ### Load Package and Check Data
 
 ``` r
+
 library(manureshed)
 
 # Check what data is available
@@ -143,6 +147,7 @@ health_check()
 ### Basic Analysis Examples
 
 ``` r
+
 # 1. Quick analysis with automatic visualizations
 results <- quick_analysis(
   scale = "county",
@@ -209,6 +214,7 @@ ohio <- run_state_analysis(
 ### Function Reference
 
 ``` r
+
 # View all available functions
 help(package = "manureshed")
 
@@ -243,6 +249,7 @@ help(package = "manureshed")
 ### Regional Nutrient Analysis
 
 ``` r
+
 # Analyze nitrogen flows in the Great Lakes region
 great_lakes <- run_builtin_analysis(
   scale = "huc8",
@@ -265,6 +272,7 @@ plot_before_after_comparison(summary_stats)
 ### Watershed Management Planning
 
 ``` r
+
 # Load watershed boundaries
 huc8_boundaries <- load_builtin_boundaries("huc8")
 
@@ -293,6 +301,7 @@ create_network_plot(
 ### Custom WWTP Data Integration
 
 ``` r
+
 # Load your own WWTP data for any year
 custom_wwtp <- load_user_wwtp(
   file_path = "my_wwtp_2018.csv",
@@ -319,6 +328,7 @@ custom_results <- run_builtin_analysis(
 ### Multi-Year Trend Analysis
 
 ``` r
+
 # Analyze trends across multiple years
 trend_results <- batch_analysis_years(
   scale = "county",
@@ -335,6 +345,7 @@ list_available_years()
 ### State-Level Analysis
 
 ``` r
+
 # Quick state analysis with maps
 iowa_results <- quick_state_analysis(
   state = "IA",
@@ -461,6 +472,7 @@ The package is optimized for:
 ### Performance Tips
 
 ``` r
+
 # Check package health
 health_check()
 
@@ -495,6 +507,7 @@ rlang
 ### Recommended Packages
 
 ``` r
+
 # Install these for full functionality
 install.packages(c(
   "viridis",      # Color schemes
@@ -517,6 +530,7 @@ If you use manureshed in your research, please cite:
 ### Package Citation
 
 ``` r
+
 citation("manureshed")
 ```
 

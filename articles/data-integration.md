@@ -1,6 +1,7 @@
 # Using Your Own Data
 
 ``` r
+
 library(manureshed)
 #> 
 #> =================================================================
@@ -38,7 +39,8 @@ library(manureshed)
 #>       integrated manureshed framework for agricultural and municipal resource management.
 #>       Resources, Conservation and Recycling, https://doi.org/10.1016/j.resconrec.2025.108697
 #> 
-#>   Cached datasets: 6/10 downloaded
+#>   Cache status: No datasets cached yet
+#>   Run download_all_data() to download all datasets
 #> 
 ```
 
@@ -60,6 +62,7 @@ The package has WWTP data for 2007-2016. For other years, provide your
 own:
 
 ``` r
+
 # Use your WWTP files for 2020
 results_2020 <- run_builtin_analysis(
   scale = "huc8",
@@ -100,6 +103,7 @@ and saved results.
 You can integrate additional nutrient sources beyond WWTP:
 
 ``` r
+
 # Example: Adding industrial sources
 industrial_data <- data.frame(
   Facility_Name = c("Steel Plant A", "Chemical Plant B", "Food Processor C"),
@@ -129,6 +133,7 @@ industrial_aggregated <- wwtp_aggregate_by_boundaries(
 ### Working with Different Time Periods
 
 ``` r
+
 # Create a time series dataset
 years_to_analyze <- 2018:2022
 time_series_results <- list()
@@ -182,6 +187,7 @@ print(yearly_summary)
 If you have agricultural data from other sources:
 
 ``` r
+
 # Example: Custom agricultural data format
 custom_farm_data <- data.frame(
   County_FIPS = c("39001", "39003", "39005"),
@@ -220,6 +226,7 @@ print(custom_classified)
 ### Data Validation and Quality Control
 
 ``` r
+
 # Function to validate your custom data
 validate_custom_data <- function(data, data_type = "wwtp") {
   
@@ -289,6 +296,7 @@ validate_custom_data <- function(data, data_type = "wwtp") {
 ### Exporting Results
 
 ``` r
+
 # Export results in different formats
 export_analysis_results <- function(results, output_dir = "exports") {
   
@@ -336,6 +344,7 @@ export_analysis_results <- function(results, output_dir = "exports") {
 ### WWTP Data Issues
 
 ``` r
+
 # Common WWTP data problems and solutions
 
 # Problem 1: "No valid facilities remaining after cleaning"
@@ -373,6 +382,7 @@ standardize_mixed_units <- function(data, load_col, unit_col) {
 ### Agricultural Data Issues
 
 ``` r
+
 # Common agricultural data problems
 
 # Problem: Impossible nutrient balances
@@ -430,6 +440,7 @@ to get proper citations for the package and underlying datasets.
 ### Function Help
 
 ``` r
+
 # Get help on specific functions
 ?load_user_wwtp
 ?run_builtin_analysis  
@@ -469,6 +480,7 @@ data as needed.nitrogen_2020.csv” )
 Most EPA WWTP files work automatically:
 
 ``` r
+
 # Standard EPA format (auto-detected)
 results <- run_builtin_analysis(
   scale = "county",
@@ -483,6 +495,7 @@ results <- run_builtin_analysis(
 #### Different Units
 
 ``` r
+
 # If your data uses pounds instead of kg
 results <- run_builtin_analysis(
   scale = "huc8", 
@@ -499,6 +512,7 @@ results <- run_builtin_analysis(
 #### Different File Format
 
 ``` r
+
 # If headers are in different rows
 results <- run_builtin_analysis(
   scale = "county",
@@ -514,6 +528,7 @@ results <- run_builtin_analysis(
 #### Custom Column Names
 
 ``` r
+
 # If your columns have different names
 custom_mapping <- list(
   facility_name = "Plant_Name",
@@ -538,6 +553,7 @@ results <- run_builtin_analysis(
 For full control, process WWTP data step by step:
 
 ``` r
+
 # Step 1: Load your WWTP file
 wwtp_raw <- load_user_wwtp(
   file_path = "nitrogen_2020.csv",
@@ -575,6 +591,7 @@ integrated <- integrate_wwtp_agricultural(
 ### Common Conversions
 
 ``` r
+
 # Convert between units
 kg_loads <- c(1000, 2000, 5000)
 tons_loads <- convert_load_units(kg_loads, "kg")
@@ -594,6 +611,7 @@ The package automatically converts P2O5 to P, but you can do it
 manually:
 
 ``` r
+
 # If you have P2O5 data, convert to P
 p2o5_values <- c(100, 200, 300)  # kg P2O5
 p_values <- p2o5_values * P2O5_TO_P  # Convert to P
@@ -606,6 +624,7 @@ print(paste("P2O5 to P conversion factor:", P2O5_TO_P))
 ### County Data (FIPS Codes)
 
 ``` r
+
 # County analysis - make sure you have 5-digit FIPS codes
 county_results <- run_builtin_analysis(
   scale = "county",
@@ -619,6 +638,7 @@ county_results <- run_builtin_analysis(
 ### HUC8 Watersheds
 
 ``` r
+
 # HUC8 analysis - 8-digit watershed codes
 huc8_results <- run_builtin_analysis(
   scale = "huc8", 
@@ -635,6 +655,7 @@ print(formatted_codes)  # "04110001", "04110002"
 ### HUC2 Regions
 
 ``` r
+
 # HUC2 analysis - 2-digit regional codes
 huc2_results <- run_builtin_analysis(
   scale = "huc2",
@@ -648,6 +669,7 @@ huc2_results <- run_builtin_analysis(
 ### Single State
 
 ``` r
+
 # Analyze just one state
 iowa_results <- run_state_analysis(
   state = "IA",
@@ -671,6 +693,7 @@ texas_results <- run_state_analysis(
 ### Multiple States
 
 ``` r
+
 # Analyze several states
 midwest_states <- c("IA", "IL", "IN", "OH") 
 state_results <- list()
@@ -691,6 +714,7 @@ for (state in midwest_states) {
 ### Validate Your Data
 
 ``` r
+
 # Check your results make sense
 quick_check(results)
 
@@ -706,6 +730,7 @@ if ("wwtp" %in% names(results)) {
 ### Common Data Issues
 
 ``` r
+
 # Problem: Negative nutrient values
 # Solution: Check your data source and units
 
@@ -724,6 +749,7 @@ if ("wwtp" %in% names(results)) {
 ### Time Series Analysis
 
 ``` r
+
 # Analyze multiple years
 years_to_analyze <- 2014:2016
 
@@ -759,6 +785,7 @@ for (year in names(custom_wwtp_files)) {
 ### File Organization
 
 ``` r
+
 # Organize your data files
 # project_folder/
 #   â”œâ”€â”€ wwtp_data/
@@ -785,6 +812,7 @@ results <- run_builtin_analysis(
 ### Memory Management
 
 ``` r
+
 # For large datasets, clear cache periodically
 clear_data_cache()
 
@@ -801,6 +829,7 @@ gc()
 Here’s a complete example using custom data:
 
 ``` r
+
 # 1. Prepare your WWTP file (nitrogen_2021.csv)
 # Make sure it has columns: Facility Name, Latitude, Longitude, Load (kg/yr), State
 
@@ -837,6 +866,7 @@ save_spatial_data(
 ### Integration Issues
 
 ``` r
+
 # Common integration problems
 
 # Problem: WWTP facilities not matching spatial units
@@ -903,6 +933,7 @@ verify_scale_consistency <- function(agricultural_data, wwtp_data, scale) {
 ### File Organization
 
 ``` r
+
 # Recommended project structure
 create_project_structure <- function(project_name) {
   
@@ -947,6 +978,7 @@ create_project_structure <- function(project_name) {
 ### Data Documentation
 
 ``` r
+
 # Document your custom data sources
 document_data_sources <- function(wwtp_files = NULL, agricultural_files = NULL, 
                                  output_file = "data_documentation.txt") {
@@ -1023,6 +1055,7 @@ document_data_sources <- function(wwtp_files = NULL, agricultural_files = NULL,
 ### Quality Assurance Workflow
 
 ``` r
+
 # Complete quality assurance workflow
 quality_assurance_workflow <- function(results, data_sources = NULL) {
   
@@ -1172,6 +1205,7 @@ first.
 ### Function Help
 
 ``` r
+
 # Get help on specific functions
 ?load_user_wwtp
 ?run_builtin_analysis  

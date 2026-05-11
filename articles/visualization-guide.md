@@ -1,6 +1,7 @@
 # Creating Maps and Plots
 
 ``` r
+
 library(manureshed)
 #> 
 #> =================================================================
@@ -38,7 +39,8 @@ library(manureshed)
 #>       integrated manureshed framework for agricultural and municipal resource management.
 #>       Resources, Conservation and Recycling, https://doi.org/10.1016/j.resconrec.2025.108697
 #> 
-#>   Cached datasets: 6/10 downloaded
+#>   Cache status: No datasets cached yet
+#>   Run download_all_data() to download all datasets
 #> 
 ```
 
@@ -58,6 +60,7 @@ The easiest way to get maps is with
 [`quick_analysis()`](https://exelegch.github.io/manureshed-docs/reference/quick_analysis.md):
 
 ``` r
+
 # This creates all maps automatically
 results <- quick_analysis(
   scale = "huc8",
@@ -75,6 +78,7 @@ results <- quick_analysis(
 ### 1. Get Analysis Results First
 
 ``` r
+
 # Run analysis to get data for mapping
 results <- run_builtin_analysis(
   scale = "county",
@@ -87,6 +91,7 @@ results <- run_builtin_analysis(
 ### 2. Agricultural Classification Maps
 
 ``` r
+
 # Basic nitrogen map
 nitrogen_map <- map_agricultural_classification(
   data = results$agricultural,
@@ -113,6 +118,7 @@ phosphorus_map <- map_agricultural_classification(
 ### 3. Combined Maps (Agricultural + WWTP)
 
 ``` r
+
 # Map showing effect of adding WWTP data
 combined_nitrogen <- map_agricultural_classification(
   data = results$integrated$nitrogen,
@@ -132,6 +138,7 @@ combined_phosphorus <- map_agricultural_classification(
 ### 4. WWTP Facility Maps
 
 ``` r
+
 # Map showing WWTP locations colored by size
 facility_map <- map_wwtp_points(
   wwtp_sf = results$wwtp$nitrogen$spatial_data,
@@ -145,6 +152,7 @@ print(facility_map)
 ### 5. WWTP Influence Maps
 
 ``` r
+
 # Map showing how much WWTP contributes to each area
 influence_map <- map_wwtp_influence(
   data = results$integrated$nitrogen,
@@ -160,6 +168,7 @@ print(influence_map)
 ### Before/After WWTP Integration
 
 ``` r
+
 # Create summary data
 summary_data <- create_classification_summary(
   data = results$integrated$nitrogen,
@@ -194,6 +203,7 @@ change_plot <- plot_absolute_changes(
 ### Spatial Transition Networks
 
 ``` r
+
 # Add coordinates to the data
 centroids <- add_centroid_coordinates(results$integrated$nitrogen)
 
@@ -219,6 +229,7 @@ print(transitions)
 ### Save Options
 
 ``` r
+
 # Different resolutions and formats
 save_plot(nitrogen_map, "map_web.png", width = 8, height = 6, dpi = 150)      # Web
 save_plot(nitrogen_map, "map_print.png", width = 10, height = 8, dpi = 300)   # Print  
@@ -231,6 +242,7 @@ save_plot(nitrogen_map, "map_vector.pdf", width = 10, height = 8)
 ### Custom Colors
 
 ``` r
+
 # Use different colors
 custom_map <- map_agricultural_classification(
   data = results$agricultural,
@@ -252,6 +264,7 @@ custom_map <- map_agricultural_classification(
 ### County Level
 
 ``` r
+
 # County analysis
 county_results <- run_builtin_analysis(scale = "county", year = 2016, 
                                        nutrients = "nitrogen", include_wwtp = TRUE)
@@ -265,6 +278,7 @@ county_map <- map_agricultural_classification(
 ### HUC8 Watersheds
 
 ``` r
+
 # Watershed analysis  
 huc8_results <- run_builtin_analysis(scale = "huc8", year = 2016,
                                      nutrients = "nitrogen", include_wwtp = TRUE)
@@ -278,6 +292,7 @@ huc8_map <- map_agricultural_classification(
 ### HUC2 Regions
 
 ``` r
+
 # Regional analysis
 huc2_results <- run_builtin_analysis(scale = "huc2", year = 2016,
                                      nutrients = "nitrogen", include_wwtp = TRUE)
@@ -291,6 +306,7 @@ huc2_map <- map_agricultural_classification(
 ## State-Specific Maps
 
 ``` r
+
 # Create maps for a specific state
 iowa_results <- run_state_analysis(
   state = "IA", 
@@ -318,6 +334,7 @@ texas_maps <- quick_state_analysis(
 ## Multi-Panel Figures
 
 ``` r
+
 # Create side-by-side comparison
 library(ggplot2)
 library(gridExtra)  # or cowplot
@@ -343,6 +360,7 @@ ggsave("combined_maps.png", combined_figure, width = 16, height = 8)
 ### Map Quality
 
 ``` r
+
 # For presentations (screen)
 save_plot(map, "presentation.png", width = 12, height = 8, dpi = 150)
 
@@ -363,6 +381,7 @@ save_plot(map, "journal.png", width = 8, height = 6, dpi = 600)
 ### File Management
 
 ``` r
+
 # Organize your outputs
 create_maps_folder <- function(analysis_name) {
   dir.create(analysis_name, showWarnings = FALSE)
@@ -379,6 +398,7 @@ create_maps_folder("nitrogen_analysis_2016")
 ### Common Issues
 
 ``` r
+
 # If maps are blank, check your data
 quick_check(results)
 

@@ -15,6 +15,8 @@ Different types of analysis workflows
   Features](https://exelegch.github.io/manureshed-docs/articles/advanced-features.md):
 - [Sensitivity Analysis with Custom Efficiency
   Factors](https://exelegch.github.io/manureshed-docs/articles/custom-efficiency-analyis.md):
+- [Hub Site Selection for Nutrient Recovery
+  Operations](https://exelegch.github.io/manureshed-docs/articles/hub-site-selection.md):
 
 ### Tools & Visualization
 

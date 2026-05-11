@@ -251,6 +251,7 @@ years:
 
 ## Workflow Examples
 
+
     # Check what data is available
     check_builtin_data()
 
@@ -326,7 +327,7 @@ Useful links:
 
 - <https://github.com/cwru-sdle/manureshed>
 
-- <https://cwru-sdle.github.io/manureshed>
+- <https://exelegch.github.io/manureshed-docs/>
 
 ## Author
 
