@@ -1,6 +1,7 @@
 # Check Data Availability from OSF
 
-Check Data Availability from OSF
+Check what datasets are available from the OSF repository and which are
+cached locally.
 
 ## Usage
 

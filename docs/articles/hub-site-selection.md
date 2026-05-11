@@ -1,0 +1,335 @@
+# Hub Site Selection for Nutrient Recovery Operations
+
+## Overview
+
+The hub site selection module in `manureshed` identifies optimal
+county-level locations for nutrient recovery hub operations — facilities
+that aggregate manure or municipal wastewater effluent, process it into
+recovered fertiliser products, and distribute those products to nearby
+crop farms.
+
+The module is **optional**: it requires no additional mandatory
+dependencies beyond the core package, and CDL raster processing (the
+only heavy optional step) is skipped entirely by default.
+
+### What the module does
+
+Four information layers are combined into a composite suitability score
+for every CONUS county:
+
+| Layer | Source | What it captures |
+|----|----|----|
+| Nutrient supply | NuGIS ag surplus + EPA ECHO WWTP | How much recoverable N/P is available |
+| Market demand | manureshed deficit within catchment | How much crop demand exists within trucking range |
+| Feedstock logistics | CAFO deep-learning detections | Facility density and transport centrality |
+| WWTP access | EPA ECHO facility count | Processing infrastructure flexibility |
+
+### The 3 × 3 scoring framework
+
+Nine scores span two dimensions simultaneously:
+
+|                     | **N only** | **P only** | **N & P**     |
+|---------------------|------------|------------|---------------|
+| **S1 Agricultural** | Score 1    | Score 2    | Score 3       |
+| **S2 WWTP**         | Score 4    | Score 5    | Score 6       |
+| **S3 Ag + WWTP**    | Score 7    | Score 8    | **Score 9 ★** |
+
+**Score 9 (S3/NP)** is the flagship — it integrates every available
+supply and demand signal across 8 equal-weight percentile-rank
+dimensions.
+
+All scores use equal-weight percentile ranking (Borda count equivalent),
+which makes dimensions with very different units and scales directly
+comparable.
+
+------------------------------------------------------------------------
+
+## Installation of optional dependencies
+
+The CDL raster path requires two packages not installed by default:
+
+``` r
+install.packages(c("terra", "exactextractr", "ggrepel"))
+```
+
+These are only needed if you supply a CDL raster. Everything else works
+without them.
+
+------------------------------------------------------------------------
+
+## Step 1 — Run `run_builtin_analysis()`
+
+Hub scoring takes the output of
+[`run_builtin_analysis()`](https://exelegch.github.io/manureshed-docs/reference/run_builtin_analysis.md)
+directly, so the analysis year and spatial scale are controlled there.
+Hub scoring is designed for **county scale** with **both nutrients and
+WWTP enabled**.
+
+``` r
+library(manureshed)
+
+ms <- run_builtin_analysis(
+  scale        = "county",
+  year         = 2016,
+  nutrients    = c("nitrogen", "phosphorus"),
+  include_wwtp = TRUE,
+  verbose      = TRUE
+)
+```
+
+------------------------------------------------------------------------
+
+## Step 2 — Download the CAFO data
+
+The CAFO deep-learning detection dataset (~325,000 facilities across
+CONUS) is hosted on OSF and downloaded automatically on the first call.
+It is cached locally so subsequent runs are instant.
+
+``` r
+# First call downloads (~5 MB RDS); subsequent calls use the cache
+cafo_path <- download_cafo_data()
+```
+
+For a persistent cache that survives R sessions, set the cache directory
+option in your `.Rprofile`:
+
+``` r
+options(manureshed.cache_dir = "~/manureshed_cache")
+```
+
+If you already have the CSV or RDS locally (e.g. on an HPC), pass the
+path directly to `score_hub_sites()` and no download happens.
+
+------------------------------------------------------------------------
+
+## Step 3 — Score hub sites
+
+### Default usage
+
+``` r
+hub <- score_hub_sites(
+  ms_output       = ms,
+  catchment_miles = 50      # user-controlled; default 50
+)
+
+print(hub)
+```
+
+The `catchment_miles` argument controls both the CAFO transport
+centrality radius and the demand catchment radius simultaneously. The
+default of 50 miles reflects practical raw manure haulage economics. For
+processed or pelletised products a wider radius may be appropriate.
+
+### Compute a single score
+
+For faster iteration or targeted analysis you can request only the
+scores you need:
+
+``` r
+hub9 <- score_hub_sites(
+  ms_output       = ms,
+  scores          = "Score9_S3_NP",
+  catchment_miles = 50
+)
+```
+
+### With CDL raster (optional)
+
+Supplying the USDA Cropland Data Layer refines the demand signal by
+weighting each Sink county’s deficit by the fraction of its land under
+active cultivation. All CDL cultivated codes (1–60, 66–77, 204–254) are
+included — the signal captures cropland *intensity*, not crop-type
+preference, so it works fairly across all agricultural regions.
+
+``` r
+hub <- score_hub_sites(
+  ms_output        = ms,
+  cdl_path         = "path/to/cdl_2016_conus.tif",
+  catchment_miles  = 50,
+  n_threads        = 8        # increase on HPC
+)
+```
+
+Download CDL rasters free from [USDA
+Cropland](https://www.nass.usda.gov/Research_and_Science/Cropland/Release/index.php).
+Match the CDL year to the year you passed to
+[`run_builtin_analysis()`](https://exelegch.github.io/manureshed-docs/reference/run_builtin_analysis.md).
+
+------------------------------------------------------------------------
+
+## Step 4 — Inspect results
+
+``` r
+# Top-10 counties for the flagship score
+hub$top_n[["Score9_S3_NP"]]
+
+# Which counties appear across the most scores?
+head(hub$robustness, 10)
+
+# Full master table with all metrics and scores
+names(hub$master)
+nrow(hub$master)   # one row per county
+```
+
+The `robustness` table is particularly useful for reporting: counties
+that rank in the top-10 across multiple scores and scenarios are the
+most defensible recommendations regardless of which assumptions a
+reviewer questions.
+
+------------------------------------------------------------------------
+
+## Step 5 — Map results
+
+`map_hub_sites()` produces a static ggplot choropleth for publication or
+export. For interactive exploration, use the Shiny dashboard (Hub
+Selection tab), which renders a Leaflet map.
+
+``` r
+# Static map -- save to file
+map_hub_sites(hub,
+              score     = "Score9_S3_NP",
+              save_path = "hub_flagship.png",
+              width     = 17,
+              height    = 8,
+              dpi       = 300)
+
+# Return the ggplot object without saving
+p <- map_hub_sites(hub, score = "Score3_S1_NP")
+```
+
+Labels on the map show rank, county name, and state abbreviation.
+`ggrepel` is used to avoid overlapping labels; install it if not already
+present.
+
+------------------------------------------------------------------------
+
+## Step 6 — Export results
+
+``` r
+export_hub_results(hub, output_dir = "hub_outputs")
+```
+
+This writes:
+
+    hub_outputs/
+    ├── all_counties_scores.csv          # all counties, all metrics + scores
+    ├── cross_score_robustness.csv       # robustness across scores
+    ├── S1_CAFO_validation.csv           # Spearman rho (S1 scores)
+    ├── conus_all_scores.geojson         # spatial file, all counties
+    ├── conus_all_scores.rds             # R spatial object
+    ├── run_metadata.rds                 # parameters + timestamp
+    ├── top_n_tables/
+    │   ├── Score1_S1_N_top.csv
+    │   ├── Score9_S3_NP_top.csv
+    │   └── ...
+    └── top_n_geojson/
+        ├── Score1_S1_N_top.geojson
+        └── ...
+
+------------------------------------------------------------------------
+
+## Multi-year analysis
+
+Because `score_hub_sites()` takes `ms_output` directly, running across
+multiple years is straightforward:
+
+``` r
+years    <- c(2007, 2012, 2016)
+
+hub_list <- lapply(years, function(yr) {
+  ms_yr <- run_builtin_analysis(
+    scale        = "county",
+    year         = yr,
+    nutrients    = c("nitrogen", "phosphorus"),
+    include_wwtp = TRUE,
+    verbose      = FALSE
+  )
+  score_hub_sites(ms_yr, scores = "Score9_S3_NP", verbose = FALSE)
+})
+names(hub_list) <- paste0("yr_", years)
+
+# Counties in the flagship top-10 across all three years
+top_by_year  <- lapply(hub_list, function(h) h$top_n[["Score9_S3_NP"]]$FIPS)
+stable_sites <- Reduce(intersect, top_by_year)
+
+cat("Counties stable across all years:", length(stable_sites), "\n")
+print(stable_sites)
+```
+
+Counties that remain in the top-10 regardless of year are the most
+temporally robust candidates — a strong argument for site prioritisation
+in CASFER reporting.
+
+------------------------------------------------------------------------
+
+## Varying the catchment radius
+
+``` r
+hub_50  <- score_hub_sites(ms, catchment_miles = 50,
+                            scores = "Score9_S3_NP", verbose = FALSE)
+hub_100 <- score_hub_sites(ms, catchment_miles = 100,
+                            scores = "Score9_S3_NP", verbose = FALSE)
+
+t50  <- hub_50$top_n[["Score9_S3_NP"]]$FIPS
+t100 <- hub_100$top_n[["Score9_S3_NP"]]$FIPS
+
+cat("Overlap 50 vs 100 miles:", sum(t50 %in% t100), "/ 10\n")
+```
+
+High overlap across radii confirms the ranking is not sensitive to this
+assumption — useful supporting evidence for peer review.
+
+------------------------------------------------------------------------
+
+## Understanding the scoring dimensions
+
+Each score is the **equal-weight mean of percentile ranks** across its
+dimensions. A county at the 90th percentile on any dimension scores 0.90
+on that dimension regardless of absolute units — this makes kg of manure
+N directly comparable to a count of CAFO facilities.
+
+| Percentile rank column | What it measures |
+|----|----|
+| `pr_ag_N_supply` | Manure N surplus (NuGIS) |
+| `pr_ag_P_supply` | Manure P surplus (NuGIS) |
+| `pr_combined_N_supply` | Ag + WWTP integrated N surplus |
+| `pr_combined_P_supply` | Ag + WWTP integrated P surplus |
+| `pr_wwtp_N_supply` | WWTP effluent N load (EPA ECHO) |
+| `pr_wwtp_P_supply` | WWTP effluent P load (EPA ECHO) |
+| `pr_N_demand` | CDL-weighted N deficit of Sink counties within catchment |
+| `pr_P_demand` | CDL-weighted P deficit of Sink counties within catchment |
+| `pr_wwtp_N_access` | WWTP facility count (processing flexibility) |
+| `pr_wwtp_P_access` | WWTP facility count |
+| `pr_transport` | IDW CAFO count within catchment (feedstock transport) |
+| `pr_cafo` | Raw CAFO facility count in the county |
+
+The demand dimensions (`pr_N_demand`, `pr_P_demand`) measure the
+*market* accessible to a hub in that county — the sum of CDL-weighted
+Sink deficits within the catchment, discounted by distance. This
+correctly rewards Source counties surrounded by large Sink counties
+rather than penalising them for their own low deficit.
+
+------------------------------------------------------------------------
+
+## Performance notes
+
+The most expensive step is building the county-to-county distance matrix
+(~3,100 × 3,100 pairs for CONUS). The package computes this **once** and
+reuses it for transport centrality, N demand catchment, and P demand
+catchment — reducing spatial computation to a single
+[`sf::st_distance()`](https://r-spatial.github.io/sf/reference/geos_measures.html)
+call. On a typical laptop this takes roughly 30–90 seconds; on HPC it is
+faster. CDL processing (if a raster is supplied) adds additional time
+depending on raster size and thread count.
+
+------------------------------------------------------------------------
+
+## See also
+
+- [`vignette("getting-started")`](https://exelegch.github.io/manureshed-docs/articles/getting-started.md)
+  — basic manureshed workflow
+- [`vignette("data-integration")`](https://exelegch.github.io/manureshed-docs/articles/data-integration.md)
+  — integrating custom WWTP data
+- `?score_hub_sites` — full parameter reference
+- `?download_cafo_data` — CAFO data and caching details
+- `?export_hub_results` — output file structure

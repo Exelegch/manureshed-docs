@@ -28,13 +28,13 @@ Source:
 Akanbi O, Mandayam V, Gupta A, Flynn K, Yarus J, Barcelos E, French R
 (2025). *manureshed: An Open-Source R Package for Scalable Temporal and
 Multi-Region Analysis of Integrated Agricultural-Municipal Nutrient
-Flows*. R package version 0.1.0, <https://osf.io/g39xa/>.
+Flows*. R package version 0.1.5, <https://osf.io/g39xa/>.
 
     @Manual{,
       title = {manureshed: An Open-Source R Package for Scalable Temporal and Multi-Region Analysis of Integrated Agricultural-Municipal Nutrient Flows},
       author = {Olatunde D. Akanbi and Vibha Mandayam and Arthava Gupta and K. C. Flynn and Jeffrey M. Yarus and Erika I. Barcelos and Roger H. French},
       year = {2025},
-      note = {R package version 0.1.0},
+      note = {R package version 0.1.5},
       url = {https://osf.io/g39xa/},
     }
 

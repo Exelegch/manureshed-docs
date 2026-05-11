@@ -38,7 +38,7 @@ library(manureshed)
 #>       integrated manureshed framework for agricultural and municipal resource management.
 #>       Resources, Conservation and Recycling, https://doi.org/10.1016/j.resconrec.2025.108697
 #> 
-#>   Cached datasets: 12/10 downloaded
+#>   Cached datasets: 4/10 downloaded
 #> 
 ```
 

@@ -267,7 +267,7 @@ Useful links:
 \itemize{
   \item \url{https://osf.io/g39xa/}
   \item \url{https://github.com/cwru-sdle/manureshed}
-  \item \url{https://cwru-sdle.github.io/manureshed}
+  \item \url{https://exelegch.github.io/manureshed-docs/}
 }
 
 }

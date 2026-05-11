@@ -3,19 +3,9 @@
 Load built-in WWTP data for specified year from OSF repository
 (2007-2016 available)
 
-Load built-in WWTP data for specified year from OSF repository
-(2007-2016 available)
-
 ## Usage
 
 ``` r
-load_builtin_wwtp(
-  nutrient,
-  year = 2016,
-  force_download = FALSE,
-  verbose = TRUE
-)
-
 load_builtin_wwtp(
   nutrient,
   year = 2016,
@@ -46,13 +36,11 @@ load_builtin_wwtp(
 
 Data frame with cleaned WWTP data for specified year
 
-Data frame with cleaned WWTP data for specified year
-
 ## Examples
 
 ``` r
 # \donttest{
-# Load WWTP data for different years (2007-2016 available)
+# Load WWTP nitrogen data for different years (2007-2016 available)
 wwtp_n_2016 <- load_builtin_wwtp("nitrogen", 2016)
 #> Using cached version of wwtp_nitrogen_combined
 #> Loaded WWTP nitrogen data for year 2016

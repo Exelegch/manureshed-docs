@@ -50,8 +50,8 @@ navbar:
       - text: Custom Data Integration
         href: articles/data-integration.html
       - text: -------
-      - text: Custom Efficiency Analysis
-        href: articles/custom-efficiency-analyis.html
+      - text: Hub Site Selection
+        href: articles/hub-site-selection.html
     news:
       text: Changelog
       href: news/index.html
@@ -90,6 +90,9 @@ reference:
       - quick_state_analysis
       - get_state_fips
       - filter_by_state
+      - compare_regions
+      - get_region_definitions
+      - list_regions
 
   - title: "Data Loading Functions"
     desc: "Load and prepare data for analysis"
@@ -134,6 +137,8 @@ reference:
       - integrate_wwtp_agricultural
       - integrate_complete
       - add_texas_huc8
+
+
 
   - title: "Visualization Functions"
     desc: "Create maps and plots"
@@ -193,6 +198,7 @@ reference:
       - health_check
       - test_osf_connection
       - citation_info
+      - view_cheatsheet
       - get_nutrient_colors
       - get_cropland_threshold
       - calculate_cropland_threshold
@@ -230,6 +236,7 @@ articles:
       - scenario-comparison
       - advanced-features
       - custom-efficiency-analyis
+      - hub-site-selection
 
   - title: "Tools & Visualization"
     desc: "Interactive tools and visualization guides"
@@ -244,6 +251,14 @@ articles:
 
 news:
   releases:
+    - text: "Version 0.1.5"
+      href: news/index.html#manureshed-0-1-5
+    - text: "Version 0.1.4"
+      href: news/index.html#manureshed-0-1-4
+    - text: "Version 0.1.3"
+      href: news/index.html#manureshed-0-1-3
+    - text: "Version 0.1.2"
+      href: news/index.html#manureshed-0-1-2
     - text: "Version 0.1.1"
       href: news/index.html#manureshed-0-1-1
     - text: "Version 0.1.0"

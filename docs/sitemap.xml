@@ -6,6 +6,7 @@
 <url><loc>https://exelegch.github.io/manureshed-docs/articles/dashboard-guide.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/articles/data-integration.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/articles/getting-started.html</loc></url>
+<url><loc>https://exelegch.github.io/manureshed-docs/articles/hub-site-selection.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/articles/index.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/articles/scenario-comparison.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/articles/visualization-guide.html</loc></url>
@@ -39,6 +40,7 @@
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/clean_text.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/clear_data_cache.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/compare_analyses.html</loc></url>
+<url><loc>https://exelegch.github.io/manureshed-docs/reference/compare_regions.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/compare_scenarios.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/convert_load_units.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/create_analysis_report.html</loc></url>
@@ -49,6 +51,8 @@
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/create_comparison_summary.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/create_comprehensive_comparisons.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/create_network_plot.html</loc></url>
+<url><loc>https://exelegch.github.io/manureshed-docs/reference/create_regional_plots.html</loc></url>
+<url><loc>https://exelegch.github.io/manureshed-docs/reference/create_regional_summary.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/create_stacked_area_plot.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/create_year_comparison_plots.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/create_yoy_change_plot.html</loc></url>
@@ -56,10 +60,12 @@
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/dot-onAttach.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/dot-package_info.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/download_all_data.html</loc></url>
+<url><loc>https://exelegch.github.io/manureshed-docs/reference/download_cafo_data.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/download_osf_data.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/export_for_gis.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/export_for_policy.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/export_for_publication.html</loc></url>
+<url><loc>https://exelegch.github.io/manureshed-docs/reference/export_hub_results.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/extract_scenario_metrics.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/extract_trend_data.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/filter_by_state.html</loc></url>
@@ -67,6 +73,7 @@
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/generate_report_content.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/get_cropland_threshold.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/get_nutrient_colors.html</loc></url>
+<url><loc>https://exelegch.github.io/manureshed-docs/reference/get_region_definitions.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/get_state_boundaries.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/get_state_fips.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/health_check.html</loc></url>
@@ -75,6 +82,7 @@
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/integrate_wwtp_agricultural.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/launch_dashboard.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/list_available_years.html</loc></url>
+<url><loc>https://exelegch.github.io/manureshed-docs/reference/list_regions.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/load_builtin_boundaries.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/load_builtin_nugis.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/load_builtin_wwtp.html</loc></url>
@@ -83,6 +91,7 @@
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/load_user_wwtp.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/manureshed.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/map_agricultural_classification.html</loc></url>
+<url><loc>https://exelegch.github.io/manureshed-docs/reference/map_hub_sites.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/map_wwtp_columns.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/map_wwtp_influence.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/map_wwtp_points.html</loc></url>
@@ -99,9 +108,11 @@
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/save_plot.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/save_spatial_data.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/save_transition_matrix.html</loc></url>
+<url><loc>https://exelegch.github.io/manureshed-docs/reference/score_hub_sites.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/summarize_results.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/test_osf_connection.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/validate_columns.html</loc></url>
+<url><loc>https://exelegch.github.io/manureshed-docs/reference/view_cheatsheet.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/wwtp_aggregate_by_boundaries.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/wwtp_classify_sources.html</loc></url>
 <url><loc>https://exelegch.github.io/manureshed-docs/reference/wwtp_clean_data.html</loc></url>

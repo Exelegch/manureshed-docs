@@ -1,3 +1,24 @@
+# manureshed 0.1.5
+
+- Added optional hub site selection module for identifying county-level
+  nutrient recovery hub locations across CONUS.
+  
+- Optional CDL raster integration (requires `terra` + `exactextractr`)
+  refines demand signal by cropland intensity fraction.
+  
+- New vignette: "Hub Site Selection for Nutrient Recovery Operations".
+
+- Shiny dashboard updated with Hub Selection tab: interactive Leaflet
+  suitability map, top sites table, and cross-score robustness table.
+
+# manureshed 0.1.4
+
+- Fixed persistent cache issue
+
+# manureshed 0.1.3
+
+- Fixed cache issue
+
 # manureshed 0.1.2
 
 - Fixed the hexa color problems

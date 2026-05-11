@@ -1,7 +1,7 @@
 Package: manureshed
 Type: Package
 Title: Spatiotemporal Nutrient Balance Analysis Across Agricultural and Municipal Systems
-Version: 0.1.2
+Version: 0.1.5
 Authors@R: c(
     person("Olatunde D.", "Akanbi", , "olatunde.akanbi@case.edu", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-7719-2619")),
@@ -43,14 +43,17 @@ Description: A comprehensive framework for analyzing agricultural nutrient
     NSF Engineering Research Center for Advancing Sustainable and Distributed 
     Fertilizer Production (CASFER), NSF 20-553 Gen-4 Engineering Research Centers 
     award 2133576. We thank Dr. Robert D. Sabo (U.S. Environmental Protection Agency) 
-    for his valuable contributions to the conceptual development and review of this work.
+    for his valuable contributions to the conceptual development and review of this work. 
+    We acknowledge Dr. Sheri Spiegal (U.S. Department of Agriculture–Agricultural Research Service) 
+    for foundational contributions to the manureshed classification framework 
+    (Spiegal et al. 2020) <doi:10.1016/j.agsy.2020.102813>.
 License: MIT + file LICENSE
 URL: https://osf.io/g39xa/, https://github.com/cwru-sdle/manureshed, https://exelegch.github.io/manureshed-docs/
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-Depends: 
-    R (>= 4.0.0)
+Depends:
+  R (>= 4.1.0)
 Imports:
     dplyr (>= 1.0.0),
     sf (>= 1.0.0),
@@ -80,7 +83,11 @@ Suggests:
     shinydashboard (>= 0.7.0),
     leaflet (>= 2.0.0),
     plotly (>= 4.9.0),
-    DT (>= 0.18)
+    DT (>= 0.18),
+    exactextractr, 
+    ggrepel,
+    terra
 SystemRequirements: GDAL (>= 2.0.1), GEOS (>= 3.4.0), PROJ (>= 4.8.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
+LazyData: true

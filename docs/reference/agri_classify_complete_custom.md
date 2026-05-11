@@ -52,7 +52,10 @@ Data frame with complete agricultural classifications for both nutrients
 # \donttest{
 # Load county data
 nugis_data <- load_builtin_nugis("county", 2016)
-#> Using cached version of nugis_county_data
+#> Created cache directory: /tmp/RtmprO9Xd8/manureshed/data
+#> Downloading nugis_county_data from OSF...
+#>   File ID: 689a80e81a020593fca5e8b4
+#>   Downloaded successfully (1.89 MB)
 #> Loaded NuGIS county data for year 2016
 #> Number of spatial units: 3058
 

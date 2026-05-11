@@ -326,7 +326,7 @@ Useful links:
 
 - <https://github.com/cwru-sdle/manureshed>
 
-- <https://cwru-sdle.github.io/manureshed>
+- <https://exelegch.github.io/manureshed-docs/>
 
 ## Author
 

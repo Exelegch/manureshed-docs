@@ -239,35 +239,35 @@ results <- quick_analysis(
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/Rtmp0dSqZ3/huc8_agricultural_2012.rds
+#> Saved spatial data to: /tmp/RtmprO9Xd8/huc8_agricultural_2012.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/Rtmp0dSqZ3/huc8_nitrogen_integrated_2012.rds
+#> Saved spatial data to: /tmp/RtmprO9Xd8/huc8_nitrogen_integrated_2012.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/Rtmp0dSqZ3/huc8_nitrogen_centroids_2012.csv
+#> Saved centroid data to: /tmp/RtmprO9Xd8/huc8_nitrogen_centroids_2012.csv
 #> File size: 565.05 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved spatial data to: /tmp/Rtmp0dSqZ3/huc8_phosphorus_integrated_2012.rds
+#> Saved spatial data to: /tmp/RtmprO9Xd8/huc8_phosphorus_integrated_2012.rds
 #> File size: 7.15 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/Rtmp0dSqZ3/huc8_phosphorus_centroids_2012.csv
+#> Saved centroid data to: /tmp/RtmprO9Xd8/huc8_phosphorus_centroids_2012.csv
 #> File size: 550.58 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved analysis summary to: /tmp/Rtmp0dSqZ3/analysis_summary_2012.rds
+#> Saved analysis summary to: /tmp/RtmprO9Xd8/analysis_summary_2012.rds
 #> Format: RDS
 #> File size: 0.79 KB
-#>  Results saved to:/tmp/Rtmp0dSqZ3
+#>  Results saved to:/tmp/RtmprO9Xd8
 #>   Files created:6
 #> 
 #> ======================================================================
@@ -279,37 +279,37 @@ results <- quick_analysis(
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Spatial units:2132
 #> WWTP facilities:35295
-#> Output directory:/tmp/Rtmp0dSqZ3
+#> Output directory:/tmp/RtmprO9Xd8
 #> ======================================================================
 #> Generating visualizations...
 #>   Creatingnitrogenvisualizations...
 #> Retrieving data for the year 2024
-#>   |                                                                              |                                                                      |   0%  |                                                                              |                                                                      |   1%  |                                                                              |=                                                                     |   1%  |                                                                              |=                                                                     |   2%  |                                                                              |==                                                                    |   2%  |                                                                              |==                                                                    |   3%  |                                                                              |===                                                                   |   4%  |                                                                              |===                                                                   |   5%  |                                                                              |====                                                                  |   5%  |                                                                              |====                                                                  |   6%  |                                                                              |=====                                                                 |   7%  |                                                                              |======                                                                |   8%  |                                                                              |======                                                                |   9%  |                                                                              |=======                                                               |  10%  |                                                                              |========                                                              |  11%  |                                                                              |========                                                              |  12%  |                                                                              |=========                                                             |  13%  |                                                                              |==========                                                            |  14%  |                                                                              |==========                                                            |  15%  |                                                                              |===========                                                           |  15%  |                                                                              |===========                                                           |  16%  |                                                                              |============                                                          |  17%  |                                                                              |=============                                                         |  19%  |                                                                              |==============                                                        |  20%  |                                                                              |===============                                                       |  21%  |                                                                              |================                                                      |  22%  |                                                                              |================                                                      |  23%  |                                                                              |=================                                                     |  24%  |                                                                              |==================                                                    |  25%  |                                                                              |==================                                                    |  26%  |                                                                              |===================                                                   |  27%  |                                                                              |===================                                                   |  28%  |                                                                              |====================                                                  |  29%  |                                                                              |=====================                                                 |  29%  |                                                                              |======================                                                |  31%  |                                                                              |=======================                                               |  32%  |                                                                              |========================                                              |  34%  |                                                                              |========================                                              |  35%  |                                                                              |=========================                                             |  35%  |                                                                              |==========================                                            |  36%  |                                                                              |==========================                                            |  37%  |                                                                              |===========================                                           |  38%  |                                                                              |===========================                                           |  39%  |                                                                              |============================                                          |  39%  |                                                                              |============================                                          |  40%  |                                                                              |============================                                          |  41%  |                                                                              |=============================                                         |  42%  |                                                                              |==============================                                        |  42%  |                                                                              |==============================                                        |  43%  |                                                                              |===============================                                       |  44%  |                                                                              |===============================                                       |  45%  |                                                                              |================================                                      |  45%  |                                                                              |================================                                      |  46%  |                                                                              |=================================                                     |  48%  |                                                                              |==================================                                    |  48%  |                                                                              |===================================                                   |  50%  |                                                                              |====================================                                  |  51%  |                                                                              |====================================                                  |  52%  |                                                                              |=====================================                                 |  52%  |                                                                              |======================================                                |  54%  |                                                                              |=======================================                               |  55%  |                                                                              |========================================                              |  57%  |                                                                              |=========================================                             |  58%  |                                                                              |=========================================                             |  59%  |                                                                              |==========================================                            |  60%  |                                                                              |===========================================                           |  61%  |                                                                              |===========================================                           |  62%  |                                                                              |============================================                          |  63%  |                                                                              |============================================                          |  64%  |                                                                              |==============================================                        |  65%  |                                                                              |==============================================                        |  66%  |                                                                              |===============================================                       |  67%  |                                                                              |================================================                      |  68%  |                                                                              |================================================                      |  69%  |                                                                              |=================================================                     |  70%  |                                                                              |==================================================                    |  71%  |                                                                              |==================================================                    |  72%  |                                                                              |===================================================                   |  73%  |                                                                              |====================================================                  |  74%  |                                                                              |=====================================================                 |  75%  |                                                                              |=====================================================                 |  76%  |                                                                              |======================================================                |  77%  |                                                                              |=======================================================               |  78%  |                                                                              |========================================================              |  79%  |                                                                              |========================================================              |  80%  |                                                                              |=========================================================             |  81%  |                                                                              |=========================================================             |  82%  |                                                                              |==========================================================            |  83%  |                                                                              |==========================================================            |  84%  |                                                                              |===========================================================           |  84%  |                                                                              |============================================================          |  86%  |                                                                              |=============================================================         |  87%  |                                                                              |==============================================================        |  89%  |                                                                              |===============================================================       |  90%  |                                                                              |===============================================================       |  91%  |                                                                              |================================================================      |  91%  |                                                                              |================================================================      |  92%  |                                                                              |=================================================================     |  93%  |                                                                              |==================================================================    |  95%  |                                                                              |===================================================================   |  96%  |                                                                              |====================================================================  |  97%  |                                                                              |===================================================================== |  98%  |                                                                              |===================================================================== |  99%  |                                                                              |======================================================================| 100%
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_agricultural_nitrogen_2012.png
+#>   |                                                                              |                                                                      |   0%  |                                                                              |=                                                                     |   1%  |                                                                              |==                                                                    |   2%  |                                                                              |==                                                                    |   3%  |                                                                              |==                                                                    |   4%  |                                                                              |===                                                                   |   4%  |                                                                              |===                                                                   |   5%  |                                                                              |====                                                                  |   5%  |                                                                              |====                                                                  |   6%  |                                                                              |=====                                                                 |   7%  |                                                                              |======                                                                |   8%  |                                                                              |======                                                                |   9%  |                                                                              |=======                                                               |  10%  |                                                                              |=======                                                               |  11%  |                                                                              |========                                                              |  12%  |                                                                              |=========                                                             |  13%  |                                                                              |==========                                                            |  14%  |                                                                              |==========                                                            |  15%  |                                                                              |===========                                                           |  16%  |                                                                              |============                                                          |  17%  |                                                                              |=============                                                         |  18%  |                                                                              |=============                                                         |  19%  |                                                                              |==============                                                        |  21%  |                                                                              |===============                                                       |  21%  |                                                                              |================                                                      |  23%  |                                                                              |=================                                                     |  25%  |                                                                              |==================                                                    |  26%  |                                                                              |====================                                                  |  28%  |                                                                              |=====================                                                 |  30%  |                                                                              |======================                                                |  32%  |                                                                              |========================                                              |  34%  |                                                                              |=========================                                             |  36%  |                                                                              |==========================                                            |  38%  |                                                                              |============================                                          |  40%  |                                                                              |=============================                                         |  42%  |                                                                              |===============================                                       |  44%  |                                                                              |================================                                      |  46%  |                                                                              |==================================                                    |  48%  |                                                                              |===================================                                   |  50%  |                                                                              |====================================                                  |  52%  |                                                                              |======================================                                |  54%  |                                                                              |==========================================                            |  60%  |                                                                              |===========================================                           |  62%  |                                                                              |=============================================                         |  64%  |                                                                              |==============================================                        |  66%  |                                                                              |================================================                      |  68%  |                                                                              |=================================================                     |  70%  |                                                                              |===================================================                   |  72%  |                                                                              |====================================================                  |  74%  |                                                                              |=====================================================                 |  76%  |                                                                              |========================================================              |  80%  |                                                                              |===========================================================           |  84%  |                                                                              |============================================================          |  86%  |                                                                              |==============================================================        |  88%  |                                                                              |===============================================================       |  90%  |                                                                              |=================================================================     |  92%  |                                                                              |==================================================================    |  94%  |                                                                              |===================================================================   |  96%  |                                                                              |===================================================================== |  98%  |                                                                              |======================================================================| 100%
+#> Saved plot to: /tmp/RtmprO9Xd8/map_agricultural_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1639.32 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_combined_nitrogen_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_combined_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1646.81 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_wwtp_influence_nitrogen_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_wwtp_influence_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1689.25 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_wwtp_facilities_nitrogen_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_wwtp_facilities_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1191.16 KB
 #> Device: png
-#> Created network plot: /tmp/Rtmp0dSqZ3/network_agricultural_nitrogen_2012.png
-#> Created network plot: /tmp/Rtmp0dSqZ3/network_combined_nitrogen_2012.png
+#> Created network plot: /tmp/RtmprO9Xd8/network_agricultural_nitrogen_2012.png
+#> Created network plot: /tmp/RtmprO9Xd8/network_combined_nitrogen_2012.png
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-27 20:15:50.752215
+#> created_date:2026-05-11 12:08:36.438043
 #> nutrient:nitrogen
 #> analysis_type:agricultural
 #> n_categories:4
@@ -318,14 +318,14 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/Rtmp0dSqZ3/transitions_agricultural_nitrogen_2012.csv
-#> Saved metadata to: /tmp/Rtmp0dSqZ3/transitions_agricultural_nitrogen_2012_metadata.txt
+#> Saved transition matrix to: /tmp/RtmprO9Xd8/transitions_agricultural_nitrogen_2012.csv
+#> Saved metadata to: /tmp/RtmprO9Xd8/transitions_agricultural_nitrogen_2012_metadata.txt
 #> File size: 0.19 KB
 #> Matrix dimensions: 4 x 4
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-27 20:15:50.755628
+#> created_date:2026-05-11 12:08:36.443337
 #> nutrient:nitrogen
 #> analysis_type:combined
 #> n_categories:4
@@ -334,49 +334,49 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/Rtmp0dSqZ3/transitions_combined_nitrogen_2012.csv
-#> Saved metadata to: /tmp/Rtmp0dSqZ3/transitions_combined_nitrogen_2012_metadata.txt
+#> Saved transition matrix to: /tmp/RtmprO9Xd8/transitions_combined_nitrogen_2012.csv
+#> Saved metadata to: /tmp/RtmprO9Xd8/transitions_combined_nitrogen_2012_metadata.txt
 #> File size: 0.2 KB
 #> Matrix dimensions: 4 x 4
-#> Saved plot to: /tmp/Rtmp0dSqZ3/comparison_nitrogen_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/comparison_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 83.44 KB
 #> Device: png
-#> Saved plot to: /tmp/Rtmp0dSqZ3/impact_nitrogen_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/impact_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 79.01 KB
 #> Device: png
-#> Saved plot to: /tmp/Rtmp0dSqZ3/changes_nitrogen_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/changes_nitrogen_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 81.24 KB
 #> Device: png
 #>   Creatingphosphorusvisualizations...
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_agricultural_phosphorus_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_agricultural_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1536.55 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_combined_phosphorus_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_combined_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1547.15 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_wwtp_influence_phosphorus_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_wwtp_influence_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1676.75 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_wwtp_facilities_phosphorus_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_wwtp_facilities_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1248.58 KB
 #> Device: png
-#> Created network plot: /tmp/Rtmp0dSqZ3/network_agricultural_phosphorus_2012.png
-#> Created network plot: /tmp/Rtmp0dSqZ3/network_combined_phosphorus_2012.png
+#> Created network plot: /tmp/RtmprO9Xd8/network_agricultural_phosphorus_2012.png
+#> Created network plot: /tmp/RtmprO9Xd8/network_combined_phosphorus_2012.png
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-27 20:15:57.541814
+#> created_date:2026-05-11 12:08:46.113692
 #> nutrient:phosphorus
 #> analysis_type:agricultural
 #> n_categories:4
@@ -385,14 +385,14 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/Rtmp0dSqZ3/transitions_agricultural_phosphorus_2012.csv
-#> Saved metadata to: /tmp/Rtmp0dSqZ3/transitions_agricultural_phosphorus_2012_metadata.txt
+#> Saved transition matrix to: /tmp/RtmprO9Xd8/transitions_agricultural_phosphorus_2012.csv
+#> Saved metadata to: /tmp/RtmprO9Xd8/transitions_agricultural_phosphorus_2012_metadata.txt
 #> File size: 0.2 KB
 #> Matrix dimensions: 4 x 4
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-27 20:15:57.545962
+#> created_date:2026-05-11 12:08:46.119651
 #> nutrient:phosphorus
 #> analysis_type:combined
 #> n_categories:4
@@ -401,37 +401,37 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/Rtmp0dSqZ3/transitions_combined_phosphorus_2012.csv
-#> Saved metadata to: /tmp/Rtmp0dSqZ3/transitions_combined_phosphorus_2012_metadata.txt
+#> Saved transition matrix to: /tmp/RtmprO9Xd8/transitions_combined_phosphorus_2012.csv
+#> Saved metadata to: /tmp/RtmprO9Xd8/transitions_combined_phosphorus_2012_metadata.txt
 #> File size: 0.2 KB
 #> Matrix dimensions: 4 x 4
-#> Saved plot to: /tmp/Rtmp0dSqZ3/comparison_phosphorus_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/comparison_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 84.42 KB
 #> Device: png
-#> Saved plot to: /tmp/Rtmp0dSqZ3/impact_phosphorus_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/impact_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 79.21 KB
 #> Device: png
-#> Saved plot to: /tmp/Rtmp0dSqZ3/changes_phosphorus_2012.png
+#> Saved plot to: /tmp/RtmprO9Xd8/changes_phosphorus_2012.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 83.76 KB
 #> Device: png
 #>   Generating analysis report...
-#> Generated analysis report: /tmp/Rtmp0dSqZ3/analysis_report_2012.html
+#> Generated analysis report: /tmp/RtmprO9Xd8/analysis_report_2012.html
 #> Format: HTML
 #>  Visualization complete
 #>   Files created:25
 #>   By type:data_nitrogen ( 1 ), data_phosphorus ( 1 ), facilities_nitrogen_map ( 1 ), facilities_phosphorus_map ( 1 ), influence_nitrogen_map ( 1 ), influence_phosphorus_map ( 1 ), nitrogen ( 3 ), nitrogen_map ( 2 ), nitrogen_network ( 2 ), nitrogen_transitions ( 2 ), phosphorus ( 3 ), phosphorus_map ( 2 ), phosphorus_network ( 2 ), phosphorus_transitions ( 2 ), report ( 1 )
 #>   Resolution:medium(11x6 @ 300 DPI)
-#>   Total time:0.34minutes
+#>   Total time:0.46minutes
 #> 
 #> ======================================================================
 #> QUICK ANALYSIS COMPLETE
 #> ======================================================================
-#> Analysis + Visualization time:0.34minutes
+#> Analysis + Visualization time:0.46minutes
 #> Output files:29
-#> Output directory:/tmp/Rtmp0dSqZ3
+#> Output directory:/tmp/RtmprO9Xd8
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Report generated:analysis_report_2012.html
 #> ======================================================================
@@ -506,15 +506,15 @@ results <- quick_analysis(
 #> WWTP analysis skipped
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/Rtmp0dSqZ3/county_agricultural_2005.rds
+#> Saved spatial data to: /tmp/RtmprO9Xd8/county_agricultural_2005.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved analysis summary to: /tmp/Rtmp0dSqZ3/analysis_summary_2005.rds
+#> Saved analysis summary to: /tmp/RtmprO9Xd8/analysis_summary_2005.rds
 #> Format: RDS
 #> File size: 0.5 KB
-#>  Results saved to:/tmp/Rtmp0dSqZ3
+#>  Results saved to:/tmp/RtmprO9Xd8
 #>   Files created:2
 #> 
 #> ======================================================================
@@ -525,12 +525,12 @@ results <- quick_analysis(
 #> Year:2005
 #> Nutrients analyzed:nitrogen
 #> Spatial units:3112
-#> Output directory:/tmp/Rtmp0dSqZ3
+#> Output directory:/tmp/RtmprO9Xd8
 #> ======================================================================
 #> Generating visualizations...
 #>   Creatingnitrogenvisualizations...
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_agricultural_nitrogen_2005.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_agricultural_nitrogen_2005.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 1202.14 KB
 #> Device: png
@@ -538,14 +538,14 @@ results <- quick_analysis(
 #>   Files created:1
 #>   By type:nitrogen_map ( 1 )
 #>   Resolution:medium(11x6 @ 300 DPI)
-#>   Total time:0.03minutes
+#>   Total time:0.04minutes
 #> 
 #> ======================================================================
 #> QUICK ANALYSIS COMPLETE
 #> ======================================================================
-#> Analysis + Visualization time:0.03minutes
+#> Analysis + Visualization time:0.04minutes
 #> Output files:1
-#> Output directory:/tmp/Rtmp0dSqZ3
+#> Output directory:/tmp/RtmprO9Xd8
 #> Nutrients analyzed:nitrogen
 #> ======================================================================
 
@@ -665,66 +665,66 @@ results <- quick_analysis(
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/Rtmp0dSqZ3/huc8_agricultural_2008.rds
+#> Saved spatial data to: /tmp/RtmprO9Xd8/huc8_agricultural_2008.rds
 #> File size: 7.11 MB
 #> Rows: 2132, Columns: 17
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/Rtmp0dSqZ3/huc8_phosphorus_integrated_2008.rds
+#> Saved spatial data to: /tmp/RtmprO9Xd8/huc8_phosphorus_integrated_2008.rds
 #> File size: 7.14 MB
 #> Rows: 2132, Columns: 23
 #> Geometry type: MULTIPOLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/Rtmp0dSqZ3/huc8_phosphorus_centroids_2008.csv
+#> Saved centroid data to: /tmp/RtmprO9Xd8/huc8_phosphorus_centroids_2008.csv
 #> File size: 545.13 KB
 #> Rows: 2132, Columns: 24
 #> Longitude range: [-124.345, -67.71]
 #> Latitude range: [25.201, 48.988]
-#> Saved analysis summary to: /tmp/Rtmp0dSqZ3/analysis_summary_2008.rds
+#> Saved analysis summary to: /tmp/RtmprO9Xd8/analysis_summary_2008.rds
 #> Format: RDS
 #> File size: 0.72 KB
-#>  Results saved to:/tmp/Rtmp0dSqZ3
+#>  Results saved to:/tmp/RtmprO9Xd8
 #>   Files created:4
 #> 
 #> ======================================================================
 #> ANALYSIS COMPLETE
 #> ======================================================================
-#> Processing time:0.04minutes
+#> Processing time:0.05minutes
 #> Scale:huc8
 #> Year:2008
 #> Nutrients analyzed:phosphorus
 #> Spatial units:2132
 #> WWTP facilities:6838
-#> Output directory:/tmp/Rtmp0dSqZ3
+#> Output directory:/tmp/RtmprO9Xd8
 #> ======================================================================
 #> Generating visualizations...
 #>   Creatingphosphorusvisualizations...
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_agricultural_phosphorus_2008.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_agricultural_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 4582.24 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_combined_phosphorus_2008.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_combined_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 4606.45 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_wwtp_influence_phosphorus_2008.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_wwtp_influence_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 5047.38 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/Rtmp0dSqZ3/map_wwtp_facilities_phosphorus_2008.png
+#> Saved plot to: /tmp/RtmprO9Xd8/map_wwtp_facilities_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 3454.32 KB
 #> Device: png
-#> Created network plot: /tmp/Rtmp0dSqZ3/network_agricultural_phosphorus_2008.png
-#> Created network plot: /tmp/Rtmp0dSqZ3/network_combined_phosphorus_2008.png
+#> Created network plot: /tmp/RtmprO9Xd8/network_agricultural_phosphorus_2008.png
+#> Created network plot: /tmp/RtmprO9Xd8/network_combined_phosphorus_2008.png
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-27 20:16:11.08319
+#> created_date:2026-05-11 12:09:06.113282
 #> nutrient:phosphorus
 #> analysis_type:agricultural
 #> n_categories:4
@@ -733,14 +733,14 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/Rtmp0dSqZ3/transitions_agricultural_phosphorus_2008.csv
-#> Saved metadata to: /tmp/Rtmp0dSqZ3/transitions_agricultural_phosphorus_2008_metadata.txt
+#> Saved transition matrix to: /tmp/RtmprO9Xd8/transitions_agricultural_phosphorus_2008.csv
+#> Saved metadata to: /tmp/RtmprO9Xd8/transitions_agricultural_phosphorus_2008_metadata.txt
 #> File size: 0.2 KB
 #> Matrix dimensions: 4 x 4
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-27 20:16:11.086663
+#> created_date:2026-05-11 12:09:06.119606
 #> nutrient:phosphorus
 #> analysis_type:combined
 #> n_categories:4
@@ -749,19 +749,19 @@ results <- quick_analysis(
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_Watershed
-#> Saved transition matrix to: /tmp/Rtmp0dSqZ3/transitions_combined_phosphorus_2008.csv
-#> Saved metadata to: /tmp/Rtmp0dSqZ3/transitions_combined_phosphorus_2008_metadata.txt
+#> Saved transition matrix to: /tmp/RtmprO9Xd8/transitions_combined_phosphorus_2008.csv
+#> Saved metadata to: /tmp/RtmprO9Xd8/transitions_combined_phosphorus_2008_metadata.txt
 #> File size: 0.2 KB
 #> Matrix dimensions: 4 x 4
-#> Saved plot to: /tmp/Rtmp0dSqZ3/comparison_phosphorus_2008.png
+#> Saved plot to: /tmp/RtmprO9Xd8/comparison_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 190.9 KB
 #> Device: png
-#> Saved plot to: /tmp/Rtmp0dSqZ3/impact_phosphorus_2008.png
+#> Saved plot to: /tmp/RtmprO9Xd8/impact_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 185.55 KB
 #> Device: png
-#> Saved plot to: /tmp/Rtmp0dSqZ3/changes_phosphorus_2008.png
+#> Saved plot to: /tmp/RtmprO9Xd8/changes_phosphorus_2008.png
 #> Dimensions: 16 x 9 in at 450 DPI
 #> File size: 190.03 KB
 #> Device: png
@@ -769,14 +769,14 @@ results <- quick_analysis(
 #>   Files created:12
 #>   By type:data_phosphorus ( 1 ), facilities_phosphorus_map ( 1 ), influence_phosphorus_map ( 1 ), phosphorus ( 3 ), phosphorus_map ( 2 ), phosphorus_network ( 2 ), phosphorus_transitions ( 2 )
 #>   Resolution:high(16x9 @ 450 DPI)
-#>   Total time:0.22minutes
+#>   Total time:0.33minutes
 #> 
 #> ======================================================================
 #> QUICK ANALYSIS COMPLETE
 #> ======================================================================
-#> Analysis + Visualization time:0.22minutes
+#> Analysis + Visualization time:0.33minutes
 #> Output files:14
-#> Output directory:/tmp/Rtmp0dSqZ3
+#> Output directory:/tmp/RtmprO9Xd8
 #> Nutrients analyzed:phosphorus
 #> ======================================================================
 # }

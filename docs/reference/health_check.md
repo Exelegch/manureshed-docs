@@ -31,7 +31,7 @@ health_check()
 #> ✓ Spatial libraries: OK
 #> ✓ Mapping capabilities: OK
 #> ✓ Network analysis: OK
-#> ✓ Cache directory: OK
+#> ✓ Cache directory: writable
 #> -----------------------------------
 #> Health Score:6/6
 #> 
@@ -46,14 +46,14 @@ health_check(verbose = TRUE)
 #> ✓ Spatial libraries: OK
 #> ✓ Mapping capabilities: OK
 #> ✓ Network analysis: OK
-#> ✓ Cache directory: OK
+#> ✓ Cache directory: writable
 #> -----------------------------------
 #> Health Score:6/6
 #> 
 #> Detailed Information:
-#> R version:R version 4.5.2 (2025-10-31)
-#> Package version:0.1.2
-#> Install path:/tmp/RtmpO43uiz/temp_libpath3805c6692bd950/manureshed
+#> R version:R version 4.5.3 (2026-03-11)
+#> Package version:0.1.5
+#> Install path:/tmp/RtmpfOSkOI/temp_libpath3f4d7a641c0437/manureshed
 #> OSF repository:https://osf.io/g39xa/
 #> Cache location:/home/oda10/.cache/R/manureshed/data
 #> Spatial versions:
